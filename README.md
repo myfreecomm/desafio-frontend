@@ -39,9 +39,4 @@ Coisa simples, não?
 
 
 
-Seu projeto será avaliado de acordo com os seguintes critérios.
-
-Sua aplicação preenche os requerimentos básicos?
-Você documentou a maneira de configurar o ambiente e rodar sua aplicação?
-Você seguiu as instruções de envio do desafio?
-Adicionalmente, tentaremos verificar a sua familiarização com as bibliotecas padrões (standard libs), bem como sua experiência com programação orientada a objetos a partir da estrutura de seu projeto.
+Seu projeto será avaliado de acordo com a qualidade do seu código e sua organização com os arquivos utilizados
