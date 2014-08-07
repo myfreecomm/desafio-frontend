@@ -1,0 +1,63 @@
+* { box-sizing: border-box; }
+*:before, *:after { box-sizing: border-box; }
+
+body { position: relative; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+a { text-decoration: none; color: #000000; }
+header:before, header:after, footer:before, footer:after, .container:before, .row:before, .container:after, .row:after { display: table; content: " "; }
+header:after, footer:after, .container:after, .row:after { clear: both; }
+
+.fixed { left: 0; right: 0; top: 0; position: fixed; z-index: 1000; }
+
+#logo { float: left; }
+
+.menu ul { padding: 10px 0px; }
+.menu ul li { display: inline; padding: 0px 15px; border-right: solid 1px; line-height: 14px; }
+.menu ul li:last-child { border: none; padding-right: 0px; }
+footer .menu ul li { border-color: #2F62F3; }
+footer .menu a:hover { color: #2F62F3; }
+
+header.fixed img { display: none; }
+header.fixed ul { padding: 0px; }
+header.fixed .container { padding: 10px 20px; }
+
+section { width: 100%; }
+.container { width: 1040px; margin: auto; padding: 20px; }
+.row { padding: 20px 0px; }
+*[class*="col-"] { float: left; padding: 0px 2.5%; }
+.col-33 { width: 33.33%; }
+.col-40 { width: 40%; }
+.col-50 { width: 50%; }
+.col-60 { width: 60%; }
+*[class*="col-"]:first-child { padding-left: 0px; }
+*[class*="col-"]:last-child { padding-right: 0px; }
+
+input[type=text] { margin: 0px 10px; padding: 12px 18px; background-color: #FFFFFF; border-radius: 4px; border: 0px; box-shadow: 1px 1px 3px 0px #C0C0C0 inset; }
+#signup_email { width: 680px; }
+
+h3 { font-size: 1.5em; padding: 10px 0px; }
+.button { padding: 10px 18px; border-radius: 4px; border-width: 0px; }
+.icon { width: 52px; height: 52px; float: left; margin-right: 40px; background-image: url("../images/sprite.gif"); background-repeat: none; }
+.icon-gear { background-position: 0px 0px;  }
+.icon-len { background-position: 52px 0px; }
+.icon-star { background-position: 104px 0px; }
+
+.text-white, .text-white a { color: #FFFFFF; }
+.text-grey, .text-grey a { color: #767676; }
+.text-blue, .text-blue a { color: #2F62F3; }
+.bold { font-weight: bold; }
+.font-small { font-size: 0.8em; }
+
+.bg-dark-blue { background-color: #215AA9; }
+.bg-blue { background-color: #2F62F3; }
+.bg-grey { background-color: #E5EAF0; }
+.bg-pattern { background-image: url("../images/bg_pattern.gif"); border-style: solid none solid none; border-width: 1px 0px 1px 0px; border-color: #E4E4E4; }
+
+.center { text-align: center; }
+.left { text-align: left; }
+.right { text-align: right; }
+
+.melhorias { width: 250px; padding: 20px; margin: 0px 100px; position: absolute; background-color: #333333; color: #FFFFFF; border-radius: 5px; }
+
+.melhorias-right { right: 0px; }
+
+.melhorias-left { left: 0px; }
