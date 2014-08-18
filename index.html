@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Webdesign Ninja</title>
+  <link href='assets/stylesheets/reset.css' rel='stylesheet' type='text/css'>
+  <link href='assets/stylesheets/application.css' rel='stylesheet' type='text/css'>
+  <script src="assets/javascript/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        console.log($("#features").offset().top);
+        $(window).scroll(function(event) {
+          console.log($(window).scrollTop());
+          if ($(window).scrollTop() >= $("#features").offset().top) {
+            $("header").addClass("fixed");
+            $("body").css("margin-top", "76px");
+          } else {
+            $("header").removeClass("fixed");
+            $("body").css("margin-top", "0px");
+          }
+        });
+    });
+  </script>
+</head>
+<body>
+
+<header class="bg-dark-blue">
+  <div class="container">
+    <div id="logo">
+      <img src="assets/images/logo.gif">
+    </div>
+    <nav class="menu right text-white bold">
+      <ul>
+        <li><a href="">Video</a></li>
+        <li><a href="">Forum</a></li>
+        <li><a href="">Purchase Today</a></li>
+        <li><a href="">Demo</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="main" class="bg-pattern">
+    <div class="container center">
+      <img src="assets/images/main.jpg" class="row" />
+      
+      <div class="row">
+        <h3><span class="text-blue">Spotlight</span>,  a  Wordpress  Theme  for  Creatives,  Agencies  &  Small  Businesses</h3>
+
+        <p class="text-grey">Creativio is the perfect theme for the creative individual, agencies, freelancers, or small businesses.</p>
+        <p class="text-grey">It comes packed full of goodies and comes with a world class design.</p>
+      </div>
+
+      <div class="row">
+        <span class="button bg-blue text-white bold">View Demo</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-40">
+          <h3>Theme  Features</h3>
+          <ul class="font-small">
+            <li>Filterable Porftolio with Pagination</li>
+            <li>3 Custom Widgets (Twitter, Flickr, Video)</li>
+            <li>Post Format Support (Images, Galleries, Standard, Audio, Video)</li>
+            <li>Theme Options Panel</li>
+            <li>Powerful Slider</li>
+            <li>Like Counter for Portfolio & Blog Items</li>
+            <li>Wordpress 3.0+ Ready (Menus & Featured Images)</li>
+            <li>Page Templates (Archives, Contact Form, Quote Form, Faq)</li>
+            <li>Shortcode Generator (Columns, Buttons, Toggles, Tabs, Alerts, Headings)</li>
+            <li>Full Localisation Support (contains .po / .mo files)</li>
+            <li>HTML 5 Valid Code</li>
+            <li>Support Forum</li>
+            <li>Layered PSDs for Customisation</li>
+            <li>The Best Documentation in the Industry</li>
+          </ul>
+        </div>
+        <div class="col-60">
+          <img src="assets/images/features.jpg" style="margin-top: 20px" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-33">
+          <h3>Widgets & Shortcodes</h3>
+          <div class="row">
+            <div class="icon icon-gear"></div>
+            <p class="font-small text-grey">Comes with 3 custom widgets and tons of shortcodes to help you create amazing posts.</p>
+          </div>
+        </div>
+
+        <div class="col-33">
+          <h3>Filterable portfolio</h3>
+          <div class="row">
+            <div class="icon icon-star"></div>
+            <p class="font-small text-grey">Comes with 3 custom widgets and tons of shortcodes to help you create amazing posts.</p>
+          </div>
+        </div>
+
+        <div class="col-33">
+          <h3>Top  Notch  Documentation</h3>
+          <div class="row">
+            <div class="icon icon-len"></div>
+            <p class="font-small text-grey">Comes with 3 custom widgets and tons of shortcodes to help you create amazing posts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sign-up">
+    <div class="container center">
+      <form>
+        <input id="signup_email" name="signup[email]" placeholder="Enter your email address to get free theme updates ..." type="text" />
+        <input class="button bg-blue text-white bold" value="Sign Me Up" type="submit" />
+      </form>
+    </div>
+  </section>
+
+  <section id="purchase" class="bg-pattern">
+    <div class="container center">
+        <img src="assets/images/purchase.jpg" class="row">
+      
+        <div class="row">
+          <h3>What  are  you  waiting  for? <span class="text-blue">order  Spotlight</span>  today  and  blow  your  clients  minds!</h3>
+
+          <p class="font-small text-grey">Jumpstart your next web project with this professional and flexible WordPress theme.  Creativio will blow your client mind with the product you have made for them.</p>
+        </div>
+
+        <div class="row">
+          <span class="button bg-blue text-white bold">Purchase  |  $40</span>
+        </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-grey">
+  <div class="container center">
+    <div class="menu row bold">
+      <ul>
+        <li><a href="">Documentation</a></li>
+        <li><a href="">Video</a></li>
+        <li><a href="">Forum</a></li>
+        <li><a href="">Purchase Today</a></li>
+        <li><a href="">Demo</a></li>
+      </ul>
+    </div>
+
+    <div class="row">
+      <p class="text-blue">Copyright  2014.  All  Rights  Reserved</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
