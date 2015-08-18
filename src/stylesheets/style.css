@@ -1,0 +1,353 @@
+/* line 1, ../sass/reset.scss */
+body {
+  font-size: 62.5%;
+  font-family: "Open Sans";
+  margin: 0;
+  padding: 0;
+  color: #666666;
+}
+
+/* line 8, ../sass/reset.scss */
+p,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 36, ../sass/reset.scss */
+a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+/* line 42, ../sass/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 46, ../sass/reset.scss */
+fieldset,
+img {
+  border: 0;
+}
+
+/*
+	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+/* line 53, ../sass/reset.scss */
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 66, ../sass/reset.scss */
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 71, ../sass/reset.scss */
+caption,
+th {
+  text-align: left;
+}
+
+/* line 75, ../sass/reset.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 84, ../sass/reset.scss */
+q:before,
+q:after {
+  content: '';
+}
+
+/* line 88, ../sass/reset.scss */
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+/* line 94, ../sass/reset.scss */
+sup {
+  vertical-align: text-top;
+}
+
+/* line 97, ../sass/reset.scss */
+sub {
+  vertical-align: text-bottom;
+}
+
+/* line 100, ../sass/reset.scss */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*to enable resizing for IE*/
+/* line 108, ../sass/reset.scss */
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+
+/*because legend doesn't inherit in IE */
+/* line 114, ../sass/reset.scss */
+legend {
+  color: #000;
+}
+
+/* YUI CSS Detection Stamp */
+/* line 118, ../sass/reset.scss */
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+
+/* line 14, ../sass/settings.scss */
+.submit {
+  background-color: #3366ff;
+  border: medium none;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 8px 15px;
+  transition: all 200ms ease 200ms;
+}
+/* line 24, ../sass/settings.scss */
+.submit:hover {
+  background-color: #696969;
+}
+
+/* line 4, ../sass/style.scss */
+.navegation {
+  height: 70px;
+  background-color: #336699;
+  color: #fff;
+}
+/* line 9, ../sass/style.scss */
+.navegation h1 {
+  display: inline-block;
+  font-size: 3em;
+  line-height: 2;
+  margin-left: 10%;
+}
+/* line 16, ../sass/style.scss */
+.navegation span {
+  font-size: 1.6em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+/* line 23, ../sass/style.scss */
+.navegation ul {
+  display: inline-block;
+  float: right;
+  margin-right: 10%;
+  margin-top: 18px;
+}
+/* line 30, ../sass/style.scss */
+.navegation ul li {
+  display: inline-block;
+}
+/* line 33, ../sass/style.scss */
+.navegation ul li a {
+  color: #fff;
+  display: block;
+  font-size: 1.6em;
+  padding: 0 10px;
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+}
+/* line 42, ../sass/style.scss */
+.navegation ul li a:after {
+  content: '';
+  height: 16px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -8px;
+  width: 2px;
+  background-color: white;
+}
+/* line 53, ../sass/style.scss */
+.navegation ul li a:hover {
+  color: #d3d3d3;
+}
+
+/* line 61, ../sass/style.scss */
+.into {
+  background: url("../imagens/background.png") repeat;
+  height: 593px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #cccccc;
+}
+/* line 68, ../sass/style.scss */
+.into .img-header {
+  background: url("../imagens/sprit.png") -150px -48px;
+  height: 593px;
+  width: 1200px;
+  margin: 0 auto;
+}
+/* line 74, ../sass/style.scss */
+.into .img-header div {
+  height: 460px;
+}
+/* line 78, ../sass/style.scss */
+.into .img-header h1 {
+  font-size: 2.4em;
+  color: #333333;
+}
+/* line 82, ../sass/style.scss */
+.into .img-header h1 a {
+  color: #3366ff;
+}
+/* line 87, ../sass/style.scss */
+.into .img-header .submit-demo {
+  margin-top: 20px;
+}
+
+/* line 93, ../sass/style.scss */
+.content {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+/* line 98, ../sass/style.scss */
+.content .features {
+  margin: 4% 0;
+  display: inline-block;
+}
+/* line 102, ../sass/style.scss */
+.content .features h1 {
+  font-size: 2.4em;
+  margin-bottom: 20px;
+}
+/* line 107, ../sass/style.scss */
+.content .features li {
+  font-size: 1.2em;
+}
+/* line 112, ../sass/style.scss */
+.content .feat-img {
+  background: url("../imagens/sprit.png") no-repeat -175px -681px;
+  width: 533px;
+  height: 337px;
+  float: right;
+  margin-top: 20px;
+}
+/* line 121, ../sass/style.scss */
+.content .list-feat li {
+  display: inline-block;
+  margin-right: 70px;
+}
+/* line 125, ../sass/style.scss */
+.content .list-feat li h1 {
+  font-size: 2.4em;
+}
+/* line 129, ../sass/style.scss */
+.content .list-feat li .icon {
+  display: inline-block;
+}
+/* line 133, ../sass/style.scss */
+.content .list-feat li .icon-widgets {
+  background: url("../imagens/sprit.png") no-repeat -838px -785px;
+  width: 86px;
+  height: 71px;
+}
+/* line 139, ../sass/style.scss */
+.content .list-feat li .icon-star {
+  background: url("../imagens/sprit.png") no-repeat -986px -777px;
+  width: 74px;
+  height: 72px;
+}
+/* line 145, ../sass/style.scss */
+.content .list-feat li .icon-busca {
+  background: url("../imagens/sprit.png") no-repeat -1118px -784px;
+  width: 63px;
+  height: 66px;
+}
+/* line 151, ../sass/style.scss */
+.content .list-feat li p {
+  display: inline-block;
+  font-size: 1.2em;
+  vertical-align: top;
+  width: 200px;
+}
+/* line 160, ../sass/style.scss */
+.content .input-text {
+  text-align: center;
+}
+/* line 163, ../sass/style.scss */
+.content .input-text .email {
+  border-radius: 3px;
+  font-size: 1.4em;
+  height: 50px;
+  margin: 39px 10px;
+  text-indent: 10px;
+  width: 695px;
+}
+/* line 172, ../sass/style.scss */
+.content .input-text .submit-email {
+  height: 50px;
+}
+
+/* line 179, ../sass/style.scss */
+.buy {
+  background: url("../imagens/background.png");
+  height: 600px;
+  border-top: 1px solid #cccccc;
+}
+/* line 185, ../sass/style.scss */
+.buy div {
+  background: url("../imagens/sprit.png") no-repeat -247px -1099px;
+  width: 1006px;
+  height: 331px;
+  margin: 0 auto;
+}

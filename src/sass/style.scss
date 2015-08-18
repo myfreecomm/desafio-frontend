@@ -1,0 +1,191 @@
+@import 'reset.scss';
+@import 'settings.scss';
+
+.navegation {
+	height: 70px;
+	background-color: $background-nav;
+	color: #fff;
+
+	h1 {
+    	display: inline-block;
+    	font-size: 3em;
+    	line-height: 2;
+    	margin-left: 10%;
+	}
+
+	span {
+    	font-size: 1.6em;
+    	font-weight: bold;
+    	letter-spacing: 2px;
+    	text-transform: uppercase;
+	}
+
+	ul {
+		display: inline-block;
+    	float: right;
+    	margin-right: 10%;
+    	margin-top: 18px;
+
+
+    	li {
+    		display: inline-block;
+
+    		a {
+    			color: #fff;
+    			display: block;
+    			font-size: 1.6em;
+    			padding: 0 10px;
+    			font-weight: bold;
+    			position: relative;
+				text-transform: uppercase;
+
+    			&:after{
+    				content: '';
+    				height: 16px;
+    				position:absolute;
+    				right: 0;
+    				top:50%;
+    				margin-top:-8px;
+    				width:2px;
+    				background-color:white;
+    			}
+
+    			&:hover {
+    				color: $cinza-claro;
+    			}
+    		}
+    	}
+	}
+}
+
+.into {
+	background: url('../imagens/background.png') repeat;
+	height: 593px;
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #cccccc;
+
+	.img-header {
+		background: url('../imagens/sprit.png') -150px -48px;
+		height: 593px;
+		width: 1200px;
+		margin: 0 auto;
+
+		div {
+			height: 460px;
+		}
+
+		h1 {
+			font-size: 2.4em;
+			color: $text;
+
+			a {
+				color: $links;
+			}
+		}
+
+		.submit-demo {
+			margin-top: 20px;
+		}
+	}
+}
+
+.content {
+	display: block;
+    margin: 0 auto;
+    width: 80%;
+
+    .features {
+    	margin: 4% 0;
+    	display: inline-block;
+
+    	h1 {
+    		font-size: 2.4em;
+    		margin-bottom: 20px;
+    	}
+
+    	li {
+    		font-size: 1.2em;
+    	}
+    }
+
+    .feat-img {
+    	background: url('../imagens/sprit.png') no-repeat -175px -681px;
+		width: 533px;
+		height: 337px;
+		float: right;
+		margin-top: 20px;
+    }
+
+    .list-feat {
+    	li {
+    		display: inline-block;
+    		margin-right: 70px;
+
+    		h1 {
+    			font-size: 2.4em;
+    		}
+
+    		.icon {
+    			display: inline-block;
+    		}
+
+    		.icon-widgets{
+    			background: url('../imagens/sprit.png') no-repeat -838px -785px;
+				width: 86px;
+				height: 71px;
+    		}
+
+    		.icon-star {
+    			background: url('../imagens/sprit.png') no-repeat -986px -777px;
+				width: 74px;
+				height: 72px;
+    		}
+
+    		.icon-busca {
+    			background: url('../imagens/sprit.png') no-repeat -1118px -784px;
+				width: 63px;
+				height: 66px;
+    		}
+
+    		p {
+    			display: inline-block;
+    			font-size: 1.2em;
+    			vertical-align: top;
+    			width: 200px;
+    		}
+    	}
+    }
+
+    .input-text {
+    	text-align: center;
+
+    	.email {
+    		border-radius: 3px;
+    		font-size: 1.4em;
+    		height: 50px;
+    		margin: 39px 10px;
+    		text-indent: 10px;
+    		width: 695px;
+    	}
+
+    	.submit-email {
+    		height: 50px;
+    	}
+    }
+}
+
+
+.buy {
+	background: url('../imagens/background.png');
+	height: 600px;
+	border-top: 1px solid #cccccc;
+
+
+	div {
+		background: url('../imagens/sprit.png') no-repeat -247px -1099px;
+		width: 1006px;
+		height: 331px;
+		margin: 0 auto;
+	}
+}

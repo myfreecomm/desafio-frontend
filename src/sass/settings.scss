@@ -1,0 +1,28 @@
+// Cores em variáveis//
+
+$background-nav: #336699;
+$links: #3366ff;
+$content-footer: #fbfbfb;
+$nav-footer: #e5eaf1;
+$copyright: #abbaed;
+$text: #333333;
+$cinza: #696969;
+$cinza-claro: #d3d3d3;
+
+// Padronização de estilização //
+
+.submit{
+	background-color: #3366ff;
+    border: medium none;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: all 200ms ease 200ms;
+
+    &:hover {
+    	background-color: #696969;
+    }
+}
+

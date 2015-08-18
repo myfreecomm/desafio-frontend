@@ -1,0 +1,15 @@
+/* line 14, ../sass/settings.scss */
+.submit {
+  background-color: #3366ff;
+  border: medium none;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 8px 15px;
+  transition: all 200ms ease 200ms;
+}
+/* line 24, ../sass/settings.scss */
+.submit:hover {
+  background-color: #696969;
+}
