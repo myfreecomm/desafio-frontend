@@ -1,0 +1,76 @@
+@media screen and (min-width:320px) and (max-width: 736px) {
+	
+	.navegation {
+		h1 {
+			font-size: 1.6em !important;
+			margin-left: 0 !important;
+		}
+
+		span {
+			font-size: 1em !important;
+		}
+
+		ul {
+			margin: 0 !important;
+
+			a {
+				font-size: 1.3em !important;
+			}
+		}
+	}
+
+	.into {
+		height: 455px !important;
+	}
+
+
+	.content {
+
+		img {
+			margin-bottom: 30px;
+		}
+	
+		.list-feat {
+			text-align: center !important;
+	
+			li {
+				margin-right: 0 !important;
+				margin-bottom: 30px;
+			}
+		}
+
+		.email {
+			width: 100% !important;
+			margin: 39px 0 !important;
+		}
+
+		.submit-email {
+			margin-bottom: 30px;
+		}
+	}
+
+	.buy {
+		height: 415px !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+	.content {
+		width: 90% !important;
+
+		.features {
+			width: 38%;
+		}
+
+		.list-feat {
+			li {
+				margin-right: 0 !important;
+
+				p {
+					width: 190px !important;
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,234 @@
+@import 'reset.scss';
+@import 'settings.scss';
+@import 'mediaqueries.scss';
+
+header{
+	height:70px;
+}
+
+body.floating-header-active{
+	// navIgation (e com I)
+	.navegation{
+		position: fixed;
+		top:0;
+		left:0;
+		width:100%;
+
+		@include animation-name(fadeIn);
+        @include animation-duration(0.2s);
+        @include animation-iteration-count(1);
+        @include animation-fill-mode(forwards);
+	}
+}
+
+.navegation {
+	height: 70px;
+	background-color: $background-nav;
+	color: #fff;
+	width:100%;
+
+	h1 {
+    	display: inline-block;
+    	font-size: 3em;
+    	line-height: 2;
+    	margin-left: 10%;
+	}
+
+	span {
+    	font-size: 1.6em;
+    	font-weight: bold;
+    	letter-spacing: 2px;
+    	text-transform: uppercase;
+	}
+
+	ul {
+		display: inline-block;
+    	float: right;
+    	margin-right: 10%;
+    	margin-top: 18px;
+
+
+    	li {
+    		border-right: 2px solid #fff;
+    		display: inline-block;
+
+    		&:last-child {
+    			border-right: 0;
+    		}
+
+    		a {
+    			color: #fff;
+    			display: block;
+    			font-size: 1.6em;
+    			padding: 0 10px;
+    			font-weight: bold;
+    			position: relative;
+    			line-height: 1;
+
+    			&:hover {
+    				color: $cinza-claro;
+    			}
+    		}
+    	}
+	}
+}
+
+.into {
+	background: url('../imagens/background.png') repeat;
+	height: 593px;
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #cccccc;
+
+	img {
+		margin-top: 30px;
+	}
+
+	h1 {
+		@extend .title;
+		a {
+			@extend .links;
+		}
+	}
+
+	.submit-demo {
+		margin-top: 20px;
+	}
+}
+
+.content {
+	display: block;
+    margin: 0 auto;
+    width: 80%;
+
+    .features {
+    	margin: 4% 0;
+    	display: inline-block;
+
+    	h1 {
+    		margin-bottom: 20px;
+    		@extend .title;
+    	}
+
+    	li {
+    		font-size: 1.2em;
+    	}
+    }
+
+    img {
+    	float: right;
+    }
+
+    .list-feat {
+    	li {
+    		display: inline-block;
+    		margin-right: 70px;
+
+    		h1 {
+    			@extend .title;
+    		}
+
+    		.icon {
+    			display: inline-block;
+    		}
+
+    		.icon-widgets{
+    			background: url('../imagens/sprit.png') no-repeat 0 2px;
+				width: 86px;
+				height: 71px;
+    		}
+
+    		.icon-star {
+    			background: url('../imagens/sprit.png') no-repeat -130px 0;
+				width: 74px;
+				height: 72px;
+    		}
+
+    		.icon-busca {
+    			background: url('../imagens/sprit.png') no-repeat -250px 0;
+				width: 63px;
+				height: 66px;
+    		}
+
+    		p {
+    			display: inline-block;
+    			font-size: 1.2em;
+    			vertical-align: top;
+    			width: 200px;
+    			margin-top: 10px;
+    		}
+    	}
+    }
+
+    .input-text {
+    	text-align: center;
+
+    	.email {
+    		border-radius: 3px;
+    		font-size: 1.4em;
+    		height: 50px;
+    		margin: 39px 10px;
+    		text-indent: 10px;
+    		width: 695px;
+    	}
+
+    	.submit-email {
+    		height: 50px;
+    	}
+    }
+}
+
+
+.buy {
+	background: url('../imagens/background.png');
+	height: 575px;
+	border-top: 1px solid #cccccc;
+	text-align: center;
+
+	img {
+		margin-top: 25px;
+		margin-bottom: 50px;
+	}
+
+
+	div {
+		background: url('../imagens/sprit.png') no-repeat -247px -1099px;
+		width: 1006px;
+		height: 331px;
+		margin: 25px auto;
+	}
+
+	h1 {
+		@extend .title;
+
+		a {
+			@extend .links;
+		}
+	}
+
+	.submit-buy {
+		margin-top: 3%;
+	}
+}
+
+footer {
+	text-align: center;
+	background-color: $background-footer;
+	height: 168px;
+
+	li {
+    	border-right: 1px solid #3366ff;
+    	display: inline-block;
+    	font-size: 1.4em;
+    	font-weight: bold;
+    	line-height: 1;
+    	margin-left: 7px;
+    	margin-top: 5%;
+    	padding-right: 7px;
+    }
+
+    p {
+    	font-size: 1.6em;
+    	margin-top: 20px;
+    }
+}
