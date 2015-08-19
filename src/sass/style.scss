@@ -1,10 +1,31 @@
 @import 'reset.scss';
 @import 'settings.scss';
+@import 'mediaqueries.scss';
+
+header{
+	height:70px;
+}
+
+body.floating-header-active{
+	// navIgation (e com I)
+	.navegation{
+		position: fixed;
+		top:0;
+		left:0;
+		width:100%;
+
+		@include animation-name(fadeIn);
+        @include animation-duration(0.2s);
+        @include animation-iteration-count(1);
+        @include animation-fill-mode(forwards);
+	}
+}
 
 .navegation {
 	height: 70px;
 	background-color: $background-nav;
 	color: #fff;
+	width:100%;
 
 	h1 {
     	display: inline-block;
@@ -28,7 +49,12 @@
 
 
     	li {
+    		border-right: 2px solid #fff;
     		display: inline-block;
+
+    		&:last-child {
+    			border-right: 0;
+    		}
 
     		a {
     			color: #fff;
@@ -37,18 +63,7 @@
     			padding: 0 10px;
     			font-weight: bold;
     			position: relative;
-				text-transform: uppercase;
-
-    			&:after{
-    				content: '';
-    				height: 16px;
-    				position:absolute;
-    				right: 0;
-    				top:50%;
-    				margin-top:-8px;
-    				width:2px;
-    				background-color:white;
-    			}
+    			line-height: 1;
 
     			&:hover {
     				color: $cinza-claro;
@@ -65,28 +80,19 @@
 	text-align: center;
 	border-bottom: 1px solid #cccccc;
 
-	.img-header {
-		background: url('../imagens/sprit.png') -150px -48px;
-		height: 593px;
-		width: 1200px;
-		margin: 0 auto;
+	img {
+		margin-top: 30px;
+	}
 
-		div {
-			height: 460px;
+	h1 {
+		@extend .title;
+		a {
+			@extend .links;
 		}
+	}
 
-		h1 {
-			font-size: 2.4em;
-			color: $text;
-
-			a {
-				color: $links;
-			}
-		}
-
-		.submit-demo {
-			margin-top: 20px;
-		}
+	.submit-demo {
+		margin-top: 20px;
 	}
 }
 
@@ -100,8 +106,8 @@
     	display: inline-block;
 
     	h1 {
-    		font-size: 2.4em;
     		margin-bottom: 20px;
+    		@extend .title;
     	}
 
     	li {
@@ -109,12 +115,8 @@
     	}
     }
 
-    .feat-img {
-    	background: url('../imagens/sprit.png') no-repeat -175px -681px;
-		width: 533px;
-		height: 337px;
-		float: right;
-		margin-top: 20px;
+    img {
+    	float: right;
     }
 
     .list-feat {
@@ -123,7 +125,7 @@
     		margin-right: 70px;
 
     		h1 {
-    			font-size: 2.4em;
+    			@extend .title;
     		}
 
     		.icon {
@@ -131,19 +133,19 @@
     		}
 
     		.icon-widgets{
-    			background: url('../imagens/sprit.png') no-repeat -838px -785px;
+    			background: url('../imagens/sprit.png') no-repeat 0 2px;
 				width: 86px;
 				height: 71px;
     		}
 
     		.icon-star {
-    			background: url('../imagens/sprit.png') no-repeat -986px -777px;
+    			background: url('../imagens/sprit.png') no-repeat -130px 0;
 				width: 74px;
 				height: 72px;
     		}
 
     		.icon-busca {
-    			background: url('../imagens/sprit.png') no-repeat -1118px -784px;
+    			background: url('../imagens/sprit.png') no-repeat -250px 0;
 				width: 63px;
 				height: 66px;
     		}
@@ -153,6 +155,7 @@
     			font-size: 1.2em;
     			vertical-align: top;
     			width: 200px;
+    			margin-top: 10px;
     		}
     	}
     }
@@ -178,14 +181,54 @@
 
 .buy {
 	background: url('../imagens/background.png');
-	height: 600px;
+	height: 575px;
 	border-top: 1px solid #cccccc;
+	text-align: center;
+
+	img {
+		margin-top: 25px;
+		margin-bottom: 50px;
+	}
 
 
 	div {
 		background: url('../imagens/sprit.png') no-repeat -247px -1099px;
 		width: 1006px;
 		height: 331px;
-		margin: 0 auto;
+		margin: 25px auto;
 	}
+
+	h1 {
+		@extend .title;
+
+		a {
+			@extend .links;
+		}
+	}
+
+	.submit-buy {
+		margin-top: 3%;
+	}
+}
+
+footer {
+	text-align: center;
+	background-color: $background-footer;
+	height: 168px;
+
+	li {
+    	border-right: 1px solid #3366ff;
+    	display: inline-block;
+    	font-size: 1.4em;
+    	font-weight: bold;
+    	line-height: 1;
+    	margin-left: 7px;
+    	margin-top: 5%;
+    	padding-right: 7px;
+    }
+
+    p {
+    	font-size: 1.6em;
+    	margin-top: 20px;
+    }
 }

@@ -1,4 +1,5 @@
-/* line 14, ../sass/settings.scss */
+/* Compass Mixins */
+/* line 17, ../sass/settings.scss */
 .submit {
   background-color: #3366ff;
   border: medium none;
@@ -9,7 +10,59 @@
   padding: 8px 15px;
   transition: all 200ms ease 200ms;
 }
-/* line 24, ../sass/settings.scss */
+/* line 27, ../sass/settings.scss */
 .submit:hover {
   background-color: #696969;
+}
+
+/* line 32, ../sass/settings.scss */
+.title {
+  color: #333333;
+  font-size: 2.4em;
+}
+
+/* line 37, ../sass/settings.scss */
+.links {
+  color: #3366ff;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  to {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  to {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  from {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  to {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  to {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+  }
 }

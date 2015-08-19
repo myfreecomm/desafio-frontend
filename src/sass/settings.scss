@@ -1,9 +1,12 @@
+/* Compass Mixins */
+@import "compass/";
+
 // Cores em variáveis//
 
 $background-nav: #336699;
 $links: #3366ff;
 $content-footer: #fbfbfb;
-$nav-footer: #e5eaf1;
+$background-footer: #e5eaf1;
 $copyright: #abbaed;
 $text: #333333;
 $cinza: #696969;
@@ -26,3 +29,37 @@ $cinza-claro: #d3d3d3;
     }
 }
 
+.title {
+	color: #333333;
+    font-size: 2.4em;
+}
+
+.links {
+	color: #3366ff;
+}
+
+
+// Mixins
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@include keyframes(fadeIn){
+    from{
+        @include opacity(0);
+    }
+    to{
+        @include opacity(1);
+    }
+}

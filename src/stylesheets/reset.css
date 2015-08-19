@@ -4,7 +4,7 @@ body {
   font-family: "Open Sans";
   margin: 0;
   padding: 0;
-  color: #666666;
+  color: #333333;
 }
 
 /* line 8, ../sass/reset.scss */
@@ -44,12 +44,23 @@ a {
 }
 
 /* line 42, ../sass/reset.scss */
+a:hover {
+  color: #696969;
+  transition: all 150ms ease 150ms;
+}
+
+/* line 47, ../sass/reset.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 51, ../sass/reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 46, ../sass/reset.scss */
+/* line 55, ../sass/reset.scss */
 fieldset,
 img {
   border: 0;
@@ -58,7 +69,7 @@ img {
 /*
 	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
 */
-/* line 53, ../sass/reset.scss */
+/* line 63, ../sass/reset.scss */
 address,
 caption,
 cite,
@@ -72,19 +83,19 @@ var {
   font-weight: normal;
 }
 
-/* line 66, ../sass/reset.scss */
+/* line 76, ../sass/reset.scss */
 ol,
 ul {
   list-style: none;
 }
 
-/* line 71, ../sass/reset.scss */
+/* line 81, ../sass/reset.scss */
 caption,
 th {
   text-align: left;
 }
 
-/* line 75, ../sass/reset.scss */
+/* line 85, ../sass/reset.scss */
 h1,
 h2,
 h3,
@@ -95,13 +106,13 @@ h6 {
   font-weight: normal;
 }
 
-/* line 84, ../sass/reset.scss */
+/* line 94, ../sass/reset.scss */
 q:before,
 q:after {
   content: '';
 }
 
-/* line 88, ../sass/reset.scss */
+/* line 98, ../sass/reset.scss */
 abbr,
 acronym {
   border: 0;
@@ -109,17 +120,17 @@ acronym {
 }
 
 /* to preserve line-height and selector appearance */
-/* line 94, ../sass/reset.scss */
+/* line 104, ../sass/reset.scss */
 sup {
   vertical-align: text-top;
 }
 
-/* line 97, ../sass/reset.scss */
+/* line 107, ../sass/reset.scss */
 sub {
   vertical-align: text-bottom;
 }
 
-/* line 100, ../sass/reset.scss */
+/* line 110, ../sass/reset.scss */
 input,
 textarea,
 select {
@@ -129,7 +140,7 @@ select {
 }
 
 /*to enable resizing for IE*/
-/* line 108, ../sass/reset.scss */
+/* line 118, ../sass/reset.scss */
 input,
 textarea,
 select {
@@ -137,13 +148,13 @@ select {
 }
 
 /*because legend doesn't inherit in IE */
-/* line 114, ../sass/reset.scss */
+/* line 124, ../sass/reset.scss */
 legend {
   color: #000;
 }
 
 /* YUI CSS Detection Stamp */
-/* line 118, ../sass/reset.scss */
+/* line 128, ../sass/reset.scss */
 #yui3-css-stamp.cssreset {
   display: none;
 }

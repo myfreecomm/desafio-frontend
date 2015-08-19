@@ -1,0 +1,70 @@
+@media screen and (min-width: 320px) and (max-width: 736px) {
+  /* line 4, ../sass/mediaqueries.scss */
+  .navegation h1 {
+    font-size: 1.6em !important;
+    margin-left: 0 !important;
+  }
+  /* line 9, ../sass/mediaqueries.scss */
+  .navegation span {
+    font-size: 1em !important;
+  }
+  /* line 13, ../sass/mediaqueries.scss */
+  .navegation ul {
+    margin: 0 !important;
+  }
+  /* line 16, ../sass/mediaqueries.scss */
+  .navegation ul a {
+    font-size: 1.3em !important;
+  }
+
+  /* line 22, ../sass/mediaqueries.scss */
+  .into {
+    height: 455px !important;
+  }
+
+  /* line 29, ../sass/mediaqueries.scss */
+  .content img {
+    margin-bottom: 30px;
+  }
+  /* line 33, ../sass/mediaqueries.scss */
+  .content .list-feat {
+    text-align: center !important;
+  }
+  /* line 36, ../sass/mediaqueries.scss */
+  .content .list-feat li {
+    margin-right: 0 !important;
+    margin-bottom: 30px;
+  }
+  /* line 42, ../sass/mediaqueries.scss */
+  .content .email {
+    width: 100% !important;
+    margin: 39px 0 !important;
+  }
+  /* line 47, ../sass/mediaqueries.scss */
+  .content .submit-email {
+    margin-bottom: 30px;
+  }
+
+  /* line 52, ../sass/mediaqueries.scss */
+  .buy {
+    height: 415px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 58, ../sass/mediaqueries.scss */
+  .content {
+    width: 90% !important;
+  }
+  /* line 61, ../sass/mediaqueries.scss */
+  .content .features {
+    width: 38%;
+  }
+  /* line 66, ../sass/mediaqueries.scss */
+  .content .list-feat li {
+    margin-right: 0 !important;
+  }
+  /* line 69, ../sass/mediaqueries.scss */
+  .content .list-feat li p {
+    width: 190px !important;
+  }
+}

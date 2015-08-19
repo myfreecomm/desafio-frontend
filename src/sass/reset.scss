@@ -3,7 +3,7 @@ body {
 	font-family: "Open Sans";
 	margin: 0;
 	padding: 0;
-	color: #666666;
+	color: #333333;
 }
 p,
 div,
@@ -39,6 +39,15 @@ a {
 	cursor: pointer;
 }
 
+a:hover {
+	color: #696969;
+	transition: all 150ms ease 150ms;
+}
+
+img {
+	max-width: 100%;
+}
+
 table {
 	border-collapse:collapse;
 	border-spacing:0;
@@ -46,6 +55,7 @@ table {
 fieldset,
 img {
 	border:0;
+
 }
 /*
 	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
