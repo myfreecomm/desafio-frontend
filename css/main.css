@@ -134,7 +134,7 @@ body{
     }
 }
 #menu{
-    background-color: #215aa9;
+    background: linear-gradient(rgba(33, 90, 169, 0.9), rgba(33, 90, 169, 0.9));
     padding: 0;
     margin: 0;
     color: #fff;
@@ -282,6 +282,77 @@ input {
     color: #2f62f2;
 }
 
+/*Menu **/
+.navMenu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.navMenu.compact {
+    max-width: inherit;
+    background: linear-gradient(rgba(33, 90, 169, 0.9), rgba(33, 90, 169, 0.9));
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.list{
+    position: relative;
+}
+
+.menuList{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 62.5rem;
+}
+
+/*NAV MENU - HEADER*/
+@-webkit-keyframes animationNav {
+  0% {
+    z-index: 11;
+    background: linear-gradient(rgba(33, 90, 169, 0.9), rgba(33, 90, 169, 0.9));
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
+  }
+
+  100% {
+    z-index: 11;
+    background: linear-gradient(rgba(33, 90, 169, 0.9), rgba(33, 90, 169, 0.9));
+    -webkit-transform: translate3d(0, 0%, 0);
+    transform: translate3d(0, 0%, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes animationNav {
+  0% {
+    z-index: 11;
+    background: linear-gradient(rgba(33, 90, 169, 0.9), rgba(33, 90, 169, 0.9));
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
+  }
+
+  100% {
+    z-index: 11;
+    background: linear-gradient(rgba(33, 90, 169, 0.9), rgba(33, 90, 169, 0.9));
+    -webkit-transform: translate3d(0, 0%, 0);
+    transform: translate3d(0, 0%, 0);
+    opacity: 1;
+  }
+}
+
+.animationNav {
+  -webkit-animation-name: animationNav;
+  animation-name: animationNav;
+}
 
 /* ==========================================================================
    Helper classes
