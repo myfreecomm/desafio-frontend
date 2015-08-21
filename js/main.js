@@ -7,10 +7,11 @@ Desafio.modules.menssagem = (function (){
 	return {
 		menssagem: "Desafio Webdesign Frederick",
 		talk: function(){
-			return "Mundo a Descobrir";
+			return "Run forest Run";
 		}
 	};
 })();
+
 
 Desafio.modules.animateSvg = (function() {
 	var lastScrollTop = 0;
