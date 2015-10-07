@@ -1,0 +1,43 @@
+body
+  color primaryColor
+  font-family Arial, Helvetica, "Sans-Serif"
+  overflow-x hidden
+
+.fixed-header
+  position fixed
+  left 0
+  top 0
+  width 100%
+  z-index 2
+  
+.texture
+  background url(/img/textura.png) top left
+  
+.borders
+  border-bottom 1px solid #e4e4e4
+  border-top 1px solid #e4e4e4
+
+.spacer
+  padding 40px 0 70px
+  
+.button
+  background highlightColor
+  box-shadow 0 2px 1px -1px #c8d5fc
+  color #fff
+  padding 10px 20px
+  text-shadow 0 -1px #264ec2
+  
+  &:hover
+    color #fff
+
+.featured-text
+  font-size 24px
+  
+  & > span
+    color highlightColor
+    
+  & > small
+    color secondaryColor
+    display block
+    font-size 14px
+    

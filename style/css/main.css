@@ -1,0 +1,134 @@
+body {
+  color: #3a3a3a;
+  font-family: Arial, Helvetica, "Sans-Serif";
+  overflow-x: hidden;
+}
+.fixed-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.texture {
+  background: url("/img/textura.png") top left;
+}
+.borders {
+  border-bottom: 1px solid #e4e4e4;
+  border-top: 1px solid #e4e4e4;
+}
+.spacer {
+  padding: 40px 0 70px;
+}
+.button {
+  background: #2f62f2;
+  box-shadow: 0 2px 1px -1px #c8d5fc;
+  color: #fff;
+  padding: 10px 20px;
+  text-shadow: 0 -1px #264ec2;
+}
+.button:hover {
+  color: #fff;
+}
+.featured-text {
+  font-size: 24px;
+}
+.featured-text > span {
+  color: #2f62f2;
+}
+.featured-text > small {
+  color: #767676;
+  display: block;
+  font-size: 14px;
+}
+header {
+  background: #215aa9;
+  color: #fff;
+}
+.logo {
+  color: inherit;
+}
+.logo h1 {
+  font-size: 26px;
+  margin: 20px 0 25px;
+}
+.logo small {
+  color: inherit;
+}
+.header-menu {
+  margin-top: 25px;
+}
+.header-menu li {
+  border-left: 1px solid #fff;
+  line-height: 14px;
+}
+.header-menu li:first-child {
+  border-left: 0;
+}
+.header-menu a {
+  color: #fff;
+  font-size: 16px;
+  padding: 0 15px;
+}
+.header-menu a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.theme-description {
+  padding: 40px 0 20px;
+}
+.theme-description__image {
+  height: 383px;
+  width: 940px;
+}
+.theme-description__button {
+  margin-left: -56px;
+  position: relative;
+  left: 50%;
+}
+.theme-features {
+  background: url("/img/feature.png") no-repeat right 50px;
+  margin-bottom: 50px;
+}
+.theme-features__title {
+  font-size: 24px;
+  margin: 50px 0 25px;
+}
+.theme-features__list {
+  font-size: 12px;
+  margin-bottom: 70px;
+}
+.feature-highlight__description {
+  font-size: 12px;
+  padding: 35px 60px 0 0px;
+}
+.feature-highlight__image {
+  float: left;
+  margin-right: 40px;
+}
+.form-newsletter__input {
+  height: 42px;
+}
+footer {
+  background: #e5eaf1;
+  padding: 65px 0 45px;
+}
+.footer-menu li {
+  border-left: 1px solid #2f62f2;
+  line-height: 14px;
+}
+.footer-menu li:first-child {
+  border-left: 0;
+}
+.footer-menu a {
+  color: #3a3a3a;
+  font-weight: bold;
+}
+.footer-menu a:hover {
+  color: #2f62f2;
+  text-decoration: none;
+}
+.copyright {
+  color: #2f62f2;
+  font-size: 16px;
+}
