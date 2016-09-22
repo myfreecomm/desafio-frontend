@@ -1,0 +1,10 @@
+bower_components
+build
+cache
+node_modules
+test
+npm-debug.log
+dist/
+.sass-cache
+desafiosdesign.sublime-project
+desafiosdesign.sublime-workspace
