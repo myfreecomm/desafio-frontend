@@ -1,0 +1,28 @@
+.wrapper,
+.row {
+	@extend %clearfix;
+}
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+[class*='column-'] {
+	float: left;
+	padding: 1em;
+	width: 100%;
+	min-height: 1px;
+}
+
+@media screen and (min-width: 670px) {
+	.wrapper {
+		max-width: $grid-max-width;
+	}
+
+	@for $i from 1 through $grid-columns {
+		.column-#{$i} {
+			width: 100% / $grid-columns * $i;
+		}
+	}
+}
