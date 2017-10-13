@@ -1,0 +1,59 @@
+/*Overrides*/
+a {
+  text-decoration: none;
+}
+
+/*Layout*/
+.gray-bg {
+  background: #f6f6f6;
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 10px;
+}
+
+.article-row {
+  margin: 0 10px
+}
+
+.top-bar {
+  background: #215aa9
+}
+
+
+/*Text*/
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-highlight {
+  color: #2f62f2
+}
+
+
+/*Menu*/
+.menu-link:first-child {
+  border-left: none;
+}
+
+.menu-link {
+  border-left: 1px solid #2f62f2;
+  color: #3a3a3a;
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.menu-link:hover {
+  color: #777
+}
+
+.white-menu-link {
+  border-left: 1px solid #fff;
+  color: #fff;
+}
+
+.white-menu-link:hover {
+  color: #84aade
+}
