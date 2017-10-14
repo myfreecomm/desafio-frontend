@@ -28,7 +28,7 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="top-bar">
+  <div class="top-bar top-bar-skrollr" data-anchor-target="#features"  data-0="top:0px" data-80="top: -70px" data-70="top: -70px" data-250-top="top: -70px" data-130-top="top: 0px">
     <div class="container">
       <div class="row">
         <div class="five columns">
@@ -63,7 +63,7 @@
       <div class="container">
         <div class="row">
           <div class="six columns">
-            <h2 class="bold">Theme Features</h2>
+            <h2 class="bold" id="features">Theme Features</h2>
             <ul class="features-list">
               <li>Filterable Porftolio with Pagination</li>
               <li>3 Custom Widgets (Twitter, Flickr, Video)</li>
@@ -154,6 +154,12 @@
   </footer>
 
 
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="javascript/skrollr.js"></script>
+  <script type="text/javascript">
+    var s = skrollr.init();
+  </script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

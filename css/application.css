@@ -3,6 +3,14 @@ a {
   text-decoration: none;
 }
 
+article {
+  padding-top: 70px;
+}
+
+img {
+  max-width: 100%;
+}
+
 /*Layout*/
 .gray-bg {
   background: #f3f3f3;
@@ -17,7 +25,14 @@ a {
 
 .top-bar {
   background: #215aa9;
+}
+
+.top-bar-skrollr {
+  position: fixed;
+  top: 0;
+  width: 100%;
   height: 70px;
+  z-index: 999;
 }
 
 .container-section {
