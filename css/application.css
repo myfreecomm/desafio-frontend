@@ -34,12 +34,16 @@ a {
   text-align: right;
 }
 
+.gray-text {
+  color: #767676;
+}
+
 a.text-highlight, .text-highlight {
   color: #2f62f2;
 }
 
 a.text-highlight:hover {
-  color: #84aade;
+  color: #1d4cd0;
 }
 
 .bold {
@@ -48,6 +52,7 @@ a.text-highlight:hover {
 
 .main-header {
   font-size: 2.4rem;
+  margin-bottom: 0.75rem;
 }
 
 .subheader {
@@ -113,4 +118,15 @@ a.text-highlight:hover {
 }
 
 
-/*Lists*/
+/*Mail form*/
+.mail-form {
+  padding: 50px 0
+}
+
+
+/*Footer*/
+footer {
+  background: #e5eaf1;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
