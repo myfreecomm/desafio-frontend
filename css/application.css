@@ -13,7 +13,7 @@ img {
 
 /*Layout*/
 .gray-bg {
-  background: #f3f3f3;
+  background: #f3f3f3 url('../images/gray-bg.png');
   border-bottom: 1px solid #e4e4e4;
   border-top: 1px solid #e4e4e4;
   padding-bottom: 10px;
