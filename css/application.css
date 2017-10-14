@@ -66,10 +66,24 @@ a {
 }
 
 .menu-link {
-  border-left: 1px solid #2f62f2;
   color: #3a3a3a;
   display: inline-block;
   padding: 0 15px;
+  position: relative;
+}
+
+.menu-link:after {
+  content: '';
+  height: 60%;
+  width: 1px;
+  background: #2f62f2;
+  position: absolute;
+  top: 20%;
+  left: 0;
+}
+
+.menu-link.first:after {
+  content: none;
 }
 
 .menu-link:hover {
@@ -81,8 +95,11 @@ a {
 }
 
 .white-menu-link {
-  border-left: 1px solid #fff;
   color: #fff;
+}
+
+.white-menu-link:after {
+  background: #fff;
 }
 
 .white-menu-link:hover {
