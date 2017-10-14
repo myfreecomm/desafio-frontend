@@ -34,8 +34,12 @@ a {
   text-align: right;
 }
 
-.text-highlight {
-  color: #2f62f2
+a.text-highlight, .text-highlight {
+  color: #2f62f2;
+}
+
+a.text-highlight:hover {
+  color: #84aade;
 }
 
 .bold {
@@ -48,17 +52,15 @@ a {
 
 .subheader {
   font-size: 1.4rem;
+  letter-spacing: 0;
   color: #767676;
 }
 
 
 /*Menu*/
-.inline-menu {
-  list-style: none;
-}
-
 .inline-menu li{
   display: inline;
+  font-size: 0;
 }
 
 .menu-link:first-child {
@@ -70,6 +72,8 @@ a {
   display: inline-block;
   padding: 0 15px;
   position: relative;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 .menu-link:after {
@@ -94,14 +98,19 @@ a {
   padding-top: 26px;
 }
 
-.white-menu-link {
+.top-menu-link {
   color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold
 }
 
-.white-menu-link:after {
+.top-menu-link:after {
   background: #fff;
 }
 
-.white-menu-link:hover {
+.top-menu-link:hover {
   color: #84aade
 }
+
+
+/*Lists*/
