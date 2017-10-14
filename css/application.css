@@ -24,6 +24,10 @@ a {
   padding-top: 40px;
 }
 
+.margin-fix {
+  margin: 0 -15px;
+}
+
 
 /*Text*/
 .text-center {
