@@ -5,8 +5,9 @@ a {
 
 /*Layout*/
 .gray-bg {
-  background: #f6f6f6;
+  background: #f3f3f3;
   border-bottom: 1px solid #e4e4e4;
+  border-top: 1px solid #e4e4e4;
   padding-bottom: 10px;
 }
 
@@ -15,7 +16,12 @@ a {
 }
 
 .top-bar {
-  background: #215aa9
+  background: #215aa9;
+  height: 70px;
+}
+
+.container-section {
+  padding-top: 40px;
 }
 
 
@@ -32,8 +38,29 @@ a {
   color: #2f62f2
 }
 
+.bold {
+  font-weight: 600;
+}
+
+.main-header {
+  font-size: 2.4rem;
+}
+
+.subheader {
+  font-size: 1.4rem;
+  color: #767676;
+}
+
 
 /*Menu*/
+.inline-menu {
+  list-style: none;
+}
+
+.inline-menu li{
+  display: inline;
+}
+
 .menu-link:first-child {
   border-left: none;
 }
@@ -46,7 +73,11 @@ a {
 }
 
 .menu-link:hover {
-  color: #777
+  color: #777;
+}
+
+.top-menu {
+  padding-top: 26px;
 }
 
 .white-menu-link {
