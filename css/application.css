@@ -1,0 +1,168 @@
+/*Overrides*/
+a {
+  text-decoration: none;
+}
+
+article {
+  padding-top: 70px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*Layout*/
+.gray-bg {
+  background: #f3f3f3 url('../images/gray-bg.png');
+  border-bottom: 1px solid #e4e4e4;
+  border-top: 1px solid #e4e4e4;
+  padding-bottom: 10px;
+}
+
+.article-row {
+  margin: 0 10px
+}
+
+.top-bar {
+  background: #215aa9;
+}
+
+.top-bar-skrollr {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 999;
+}
+
+.container-section {
+  padding-top: 40px;
+}
+
+.margin-fix {
+  margin: 0 -15px;
+}
+
+
+/*Text*/
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.gray-text {
+  color: #767676;
+}
+
+a.text-highlight, .text-highlight {
+  color: #2f62f2;
+}
+
+a.text-highlight:hover {
+  color: #1d4cd0;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.main-header {
+  font-size: 2.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.subheader {
+  font-size: 1.4rem;
+  letter-spacing: 0;
+  color: #767676;
+}
+
+
+/*Menu*/
+.inline-menu li{
+  display: inline;
+  font-size: 0;
+}
+
+.menu-link:first-child {
+  border-left: none;
+}
+
+.menu-link {
+  color: #3a3a3a;
+  display: inline-block;
+  padding: 0 15px;
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.menu-link:after {
+  content: '';
+  height: 60%;
+  width: 1px;
+  background: #2f62f2;
+  position: absolute;
+  top: 20%;
+  left: 0;
+}
+
+.menu-link.first:after {
+  content: none;
+}
+
+.menu-link:hover {
+  color: #777;
+}
+
+.top-menu {
+  padding-top: 26px;
+}
+
+.top-menu-link {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold
+}
+
+.top-menu-link:after {
+  background: #fff;
+}
+
+.top-menu-link:hover {
+  color: #84aade
+}
+
+
+/*Mail form*/
+.mail-form {
+  padding: 50px 0
+}
+
+input.mail-input {
+  vertical-align: top;
+  width: 75%;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.mail-button {
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+}
+
+
+/*Footer*/
+footer {
+  background: #e5eaf1;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}

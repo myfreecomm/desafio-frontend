@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic head
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Minhas Sugestões de Melhoria</title>
+  <meta name="description" content="Minhas sugestões de melhoria ao layout">
+  <meta name="author" content="Caio Andrade">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/application.css">
+  <style media="screen">
+    .container {
+      padding: 15rem 0;
+    }
+    p {
+      font-size: 1.6rem;
+    }
+    dl {
+      font-size: 1.5rem;
+    }
+    dt {
+      font-weight: bold;
+    }
+    dd {
+      margin-bottom: 1rem;
+    }
+  </style>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <article class="container">
+    <div class="row">
+      <div class="eight columns offset-by-two">
+        <h1>Minhas Sugestões</h1>
+        <h2 class="subheader"><b>Caio Andrade</b> <br> Front-end Developer <br> caioertai@gmail.com <br> (21) 99581-7698</h2>
+        <p>A primeira melhoria não tem a ver com o layout, mas com o modo como eu fiz o desafio. Para não complicar a avaliação (deixando até o repositório mais limpo) eu não usei pré-processadores. Mas, depois de mais de 6 anos usando <b>HAML e SASS</b> com <b>Ruby on Rails</b>, foi chatinho voltar ao pé duro do HTML e CSS. Normal depender de ferramentas melhores (ninguém bate prego com pedra), mas eu preciso me preparar melhor para contornar essas faltas</p>
+        <p>Quanto às sugestões para o layout, vou por ordem de importância.</p>
+        <h2>Mais relevantes</h2>
+        <dl>
+          <dt>Aumentar o <code>font-size</code> padrão</dt>
+          <dd>Tamanhos pequenos são bons para notas e observações, mas havia muito texto tamanho <code>12px</code>. Eles poderiam facilmente ser elevados a pelo menos <code>14px</code> (talvez até <code>16px</code>, seguindo as recomendações do Google), o que permitiria uma leitura mais confortável. Para piorar, metade do texto pequeno estava no limite do contraste recomendado entre cor de fonte e fundo.</dd>
+          <dt>Tornar responsive</dt>
+          <dd>Não era um requisito da tarefa, mas é relativamente fácil quando se usa um bom framework. Eu optei por uma boilerplate simples (skeleton) que achei mais adequada à tarefa. Mas se tivesse usado Foundation bastariam mais algumas horinhas para termos um site perfeitamente funcional em todas as plataformas.</dd>
+          <dt>Remover o padrão de fundo</dt>
+          <dd>Existe um padrão de fundo quase imperceptível que impede que as imagens sejam usadas em formato JPG, o que as deixaria de 50% a 66% menores. O PNG permite efeitos visuais interessantes e padrões de fundo sutis que trazem uma certa elegância, mas nesse caso foi um exagero desnecessário. Poderia ser substituído, sem muita perda, por um <code>background: #f3f3f3</code>, por exemplo.</dd>
+        </dl>
+        <h2>Duas sugestões condicionais</h2>
+        <dl>
+          <dt>Usar font-icons</dt>
+          <dd>Caso se trate de uma aplicação mais larga, em que os ícones de estrela, engrenagem e lupa se repitam com certa frequência.</dd>
+          <dt>Usar a logo em SVG</dt>
+          <dd>Também se for uma aplicação maior. Facilitaria o uso da marca em diferentes tamanhos e cores de fundo.</dd>
+        </dl>
+        <h2>Alterações que fiz de intrometido</h2>
+        <dl>
+          <dt>Creativio ou Spotlight?</dt>
+          <dd>Em alguns lugares <i>theme</i> era chamado de Creativio e em outros de Spotlight. Não sei se era uma pegadinha, mas deixei tudo conforme o nome que aparece nas imagens: Creativio.</dd>
+          <dt>Pequeno <i>Typo</i></dt>
+          <dd>Corrigi uma <i>order</i> que aparecia minúscula mas deveria começar em maiúscula.</dd>
+        </dl>
+        <p>Agradeço a atenção e desejo um bom dia. Espero poder trabalhar em breve com vocês.</p>
+
+        <div class="text-right">
+          <p>Att.,</p>
+          <h2 class="subheader"><b>Caio Andrade</b> <br> Front-end Developer <br> caioertai@gmail.com <br> (21) 99581-7698</h2>
+        </div>
+
+      </div>
+    </div>
+  </article>
+
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="javascript/skrollr.js"></script>
+  <script type="text/javascript">
+    var s = skrollr.init();
+  </script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
