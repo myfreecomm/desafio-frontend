@@ -1,0 +1,137 @@
+body {
+	font-family: Arial;
+}	
+
+
+.bg-blue { background-color: #215aa9; }
+
+.color-blue { color: #215aa9 !important; }
+
+.btn-blue {
+    color: #fff;
+    background-color: #2f62f2;
+	border-color: #2f62f2;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.btn-blue.btn-lg, .form-control-lg {
+	line-height: 25px;
+	padding-right: 1.3rem;
+    padding-left: 1.3rem;
+}
+
+.form-control-lg {
+	font-size: .85rem;
+}
+
+.form-control {
+	border-top-color: #c5c5c5;
+	border-left-color: #c5c5c5;
+	border-bottom-color: #f5f5f5;
+	border-right-color: #f5f5f5;
+	-moz-box-shadow:    inset 1px 1px 1px 0px #ccc;
+  	-webkit-box-shadow: inset 1px 1px 1px 0px #ccc;
+  	box-shadow:         inset 1px 1px 1px 0px #ccc;
+}
+
+h1, h3 {
+	color: #3a3a3a;
+	font-size: 24.5px;
+	font-weight: bold;
+	
+}
+
+h2, h4 {
+	color: #767676;
+	font-size: 14px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navbar ul.navbar-nav li.nav-item .nav-link {
+	color: #FFF;
+}
+
+@media (min-width: 768px) {
+	.navbar ul.navbar-nav li.nav-item .nav-link {
+		padding: 0 12px;
+		font-size: 1em;
+		font-weight: bold;
+		line-height: initial;
+	}
+
+	.navbar ul.navbar-nav li.nav-item:not(:first-child) .nav-link {
+		border-left: 2px solid #FFF;
+	}
+}
+
+section {
+	border-bottom: 1px solid #e4e4e4;
+	padding-bottom: 40px;
+}
+
+section:first-of-type {
+	padding-top: 4rem;
+	padding-bottom: 0;
+}
+
+section .container {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	font-size: 11.5px;
+}
+
+#mainAdvertisement, #purchase {
+	background-image: url("../img/background.jpg");
+}
+
+#features ul {
+	color: #414141;
+	list-style-type: none;
+	padding: 5px 0 0;
+	-webkit-padding-start: 0px;
+}
+
+#mainAdvertisement h1 {
+	margin-top: 40px;
+}
+
+#purchase h3 {
+	margin-top: 100px;
+}
+
+#mainAdvertisement h1, #mainAdvertisement h2, #purchase h3, #purchase h4 {
+	text-align: center;
+}
+
+#footer {
+	background-color: #e4e4e4;
+	padding-bottom: 0;
+}
+
+#footer ul {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1em;
+	list-style-type: none;
+	padding: 0;
+	-webkit-padding-start: 0px;
+}
+
+#footer ul li {
+	padding: 0 10px;
+}
+
+#footer ul li:not(:first-child) {
+	border-left: 1px solid #2f62f2;
+}
+
+#footer ul li a, #footer ul li a:visited {
+	color: #3a3a3a;
+}
+
+#footer p {
+	text-align: center;
+	color: #2f62f2;
+	font-size: 15px;
+}
