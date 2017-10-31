@@ -24,7 +24,7 @@ header {
         color: #ffffff; }
       header .lst-nav ul li a:after {
         content: '';
-        border-right: 2px solid #ffffff;
+        border-right: 1px solid #ffffff;
         padding: 0 0.313em; }
   @media (max-width: 480px) {
     header {
@@ -116,7 +116,9 @@ header {
       -moz-border-radius: 0.313em;
       -ms-border-radius: 0.313em;
       border-radius: 0.313em;
-      border-bottom: 0.063em solid #f5f5f5; }
+      border-bottom: 0.063em solid #f5f5f5;
+      margin-right: 0.625em;
+      padding: 0em 1.25em; }
     .content-register form button {
       border: transparent; }
   @media (max-width: 480px) {
@@ -191,6 +193,11 @@ footer {
   @media (min-width: 767px) and (max-width: 1024px) {
     footer p {
       font-size: 0.75em; } }
+  @media (min-width: 320px) and (max-width: 568px) {
+    footer nav ul li {
+      font-size: 0.563em; }
+    footer p {
+      font-size: 0.625em; } }
 
 .common-block p {
   text-align: center;
@@ -232,6 +239,12 @@ footer {
   -ms-border-radius: 5%;
   border-radius: 5%; }
   .button-common.large {
-    width: 10.000em; }
+    width: 10.000em;
+    padding: 0.938em 0em; }
   .button-common.medium {
     width: 9.375em; }
+  @media (max-width: 480px) {
+    .button-common {
+      font-size: 0.75em; }
+      .button-common.large {
+        width: 8.000em; } }

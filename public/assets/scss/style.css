@@ -29,10 +29,9 @@ header {
           text-decoration: none;
           color: $white;
         }
-
         a:after {
           content: '';
-          border-right: 2px solid $white;
+          border-right: 1px solid $white;
           padding: 0 $five;
         }
       }
@@ -89,7 +88,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 20;
-    @include box-shadow(0, 1px, 2px, rgba(0, 0, 0, 0.35));
+    @include box-shadow(0,1px,2px,rgba(0,0,0,0.35));
     -webkit-transition: all 1ms ease-in;
     -moz-transition: all 1ms ease-in;
     -ms-transition: all 1ms ease-in;
@@ -101,7 +100,7 @@ header {
 .content-themes {
   background: url('../images/bg-hero.jpg');
   overflow: hidden;
-  padding:$twenty 0em;
+  padding: $twenty 0em;
   border-bottom: 1px solid $greySoft;
 }
 
@@ -158,6 +157,8 @@ header {
       font-size: $fourteen;
       @include border-radius($five);
       border-bottom: $one solid $sand;
+      margin-right: $ten;
+      padding: 0em $twenty;
     }
     button {
       border: transparent;
@@ -263,6 +264,19 @@ footer {
       font-size: $twelve;
     }
   }
+
+  @include respondTo(smartSmall) {
+    nav {
+      ul {
+        li {
+          font-size: 0.563em;
+        }
+      }
+    }
+    p{
+      font-size: $ten;
+    }
+  }
 }
 
 .common-block {
@@ -314,8 +328,15 @@ footer {
 
   &.large {
     width: 10.000em;
+    padding: $fifteen 0em;
   }
   &.medium {
     width: 9.375em;
+  }
+  @include respondTo(smartphone) {
+    font-size: $twelve;
+    &.large {
+      width: 8.000em;
+    }
   }
 }
