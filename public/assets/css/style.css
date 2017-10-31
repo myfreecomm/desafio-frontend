@@ -65,7 +65,7 @@ header {
   transition: all 1ms ease-in; }
 
 .content-themes {
-  background: url("../images/bg-pattern.jpg");
+  background: url("../images/bg-pattern.jpg") repeat;
   overflow: hidden;
   padding: 1.25em 0em;
   border-bottom: 1px solid #e4e4e4; }
@@ -137,7 +137,7 @@ header {
 
 .content-order {
   margin: 3.125em 0;
-  background: url("../images/bg-pattern.jpg");
+  background: url("../images/bg-pattern.jpg") repeat;
   overflow: hidden;
   padding-bottom: 1.25em;
   border-top: 1px solid #e4e4e4; }
