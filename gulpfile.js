@@ -9,6 +9,7 @@ const concat = require('gulp-concat');
 const sass = require('gulp-sass');
 const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
+const pngquant = require('imagemin-pngquant');
 const runSequence = require('run-sequence');
 const entryPoint = 'public/assets/js/main.js';
 
@@ -45,8 +46,12 @@ gulp.task('htmlmin', () => {
 });
 
 gulp.task('imagemin', () => {
-  return gulp.src('public/assets/images/**')
-    .pipe(imagemin())
+  return gulp.src('public/assets/images/*')
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{ removeViewBox: false }],
+      use: [pngquant()]
+    }))
     .pipe(gulp.dest('./dist/images'));
 });
 
