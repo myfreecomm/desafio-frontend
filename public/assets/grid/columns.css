@@ -25,35 +25,16 @@
  float:left!important
 }
 
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
 img {
   border: 0;
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-hr {
- height:0;
- -webkit-box-sizing:content-box;
- -moz-box-sizing:content-box;
- box-sizing:content-box
-}
-hr {
- margin-top:20px;
- margin-bottom:20px;
- border:0;
- border-top:1px solid #eee
-}
-
-/*img {
-  max-width: 100%!important
-}*/
-
-.title {
-  color: #000;
-  font-weight: normal;
-  font-size: 1.563em;
-  padding: 0.938em 0.750em
 }
 
 @media (min-width: 768px) {

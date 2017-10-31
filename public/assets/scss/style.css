@@ -1,9 +1,309 @@
 @import 'mixin';
-@import 'colors';
-@import 'medias';
+@import 'util_variables';
+
+header {
+  font-family: 'arial';
+  background: $blue;
+  height: $seventy;
+  padding: 0em 7.500em;
+  h1 {
+    width: 100%;
+    height: 70px;
+    background: url('../images/brand.png') no-repeat 0 0;
+    background-size: contain;
+    text-indent: -99999px;
+    margin: 0;
+    color: $white;
+  }
+
+  .lst-nav {
+    ul {
+      margin: $thirty 0 0;
+      li {
+        display: inline;
+        color: $white;
+        padding-left: $five;
+        font-size: $default;
+        font-weight: bold;
+        a {
+          text-decoration: none;
+          color: $white;
+        }
+
+        a:after {
+          content: '';
+          border-right: 2px solid $white;
+          padding: 0 $five;
+        }
+      }
+    }
+  }
+  @include respondTo(smartphone) {
+    padding: 0em;
+    h1 {
+      background: url('../images/brand.png') no-repeat 0 20px;
+      background-size: contain;
+    }
+    .lst-nav {
+      ul {
+        margin: $twenty 0em;
+        padding: 0em;
+        li {
+          font-size: $ten;
+          padding: 0em $one;
+          a {
+            text-decoration: underline;
+          }
+          a:after {
+            border: none;
+            padding: 0em;
+          }
+        }
+      }
+    }
+  }
+  @include respondTo(tablet) {
+    padding: 0em;
+    .lst-nav {
+      ul {
+        li {
+          font-size: $fourteen;
+        }
+      }
+    }
+  }
+
+  @include respondTo(tabletPortrait) {
+    .lst-nav {
+      ul {
+        li {
+          font-size: $twelve;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  &.fixed-effects {
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    @include box-shadow(0, 1px, 2px, rgba(0, 0, 0, 0.35));
+    -webkit-transition: all 1ms ease-in;
+    -moz-transition: all 1ms ease-in;
+    -ms-transition: all 1ms ease-in;
+    -o-transition: all 1ms ease-in;
+    transition: all 1ms ease-in;
+  }
+}
+
+.content-themes {
+  background: url('../images/bg-hero.jpg');
+  overflow: hidden;
+  padding:$twenty 0em;
+  border-bottom: 1px solid $greySoft;
+}
+
+.content-features {
+  margin: $forty 0 0;
+  h2 {
+    color: $blackDark;
+    font-size: $twentyFour;
+    font-family: 'arial';
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      font-family: 'arial';
+      font-size: $twelve;
+      list-style: none;
+      padding: $five 0;
+    }
+  }
+
+  @include respondTo(smartphone) {
+    margin: 0em;
+    h2 {
+      font-size: $eighteen;
+    }
+  }
+  @include respondTo(tablet) {
+    h2 {
+      font-size: $eighteen;
+    }
+  }
+}
+
+.content-register {
+  margin: $forty 0 0;
+  h3 {
+    font-family: 'arial';
+    font-size: $twentyFour;
+  }
+  p {
+    font-size: $twelve;
+    color: $greyLight;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: $twenty;
+  }
+  form {
+    margin: 3.750em 0 0 $seventy;
+    input {
+      width: 75%;
+      height: $fifty;
+      color: $greySoftLight;
+      font-size: $fourteen;
+      @include border-radius($five);
+      border-bottom: $one solid $sand;
+    }
+    button {
+      border: transparent;
+    }
+  }
+  @include respondTo(smartphone) {
+    margin: 0em;
+    h3 {
+      font-size: $eighteen;
+    }
+    form {
+      margin: $fifteen 0em;
+      input {
+        width: 60%;
+        height: 4.125em;
+        font-size: $eight;
+      }
+    }
+  }
+  @include respondTo(tablet) {
+    h3 {
+      font-size: $eighteen;
+    }
+  }
+  @include respondTo(tabletPortrait) {
+    h3 {
+      font-size: $default;
+    }
+  }
+}
+
+.content-order {
+  margin: $fifty 0;
+  background: url('../images/bg-hero.jpg');
+  overflow: hidden;
+  padding-bottom: $twenty;
+  border-top: 1px solid $greySoft;
+  @include respondTo(smartphone) {
+    margin: 0em;
+  }
+  @include respondTo(tabletPortrait) {
+    padding-bottom: 0em;
+  }
+}
+
+footer {
+  background: $marine;
+  padding: $seventy $seventy 5.625em;
+  nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      text-align: center;
+      li {
+        display: inline;
+        font-size: $fourteen;
+        a {
+          color: $blackDark;
+          text-decoration: none;
+          padding: $five;
+          font-weight: bold;
+        }
+        &:nth-child(4) {
+          a {
+            color: $blueLight;
+          }
+        }
+      }
+      li:before {
+        content: '';
+        border-right: 1px solid $blueLight;
+      }
+    }
+  }
+  p {
+    color: $blueOcean;
+    font-size: $default;
+    text-align: center;
+  }
+  @include respondTo(smartphone) {
+    padding: 2.375em 0em 3.625em;
+    nav {
+      ul {
+        text-align: left;
+        li {
+          font-size: $twelve;
+          a {
+            padding: 0em;
+            text-decoration: underline;
+          }
+        }
+        li:before {
+          border: none;
+        }
+      }
+    }
+    p {
+      font-size: $twelve;
+    }
+  }
+  @include respondTo(tablet) {
+    p {
+      font-size: $twelve;
+    }
+  }
+}
+
+.common-block {
+  p {
+    text-align: center;
+    color: $blackDark;
+    font-weight: 600;
+    font-size: $twenty;
+    margin: $forty 0 0;
+    span {
+      color: $blue;
+    }
+  }
+
+  p+p {
+    color: $greyLight;
+    font-size: $fourteen;
+    font-weight: normal;
+    margin: $ten 0 $thirty;
+  }
+
+  @include respondTo(smartphone) {
+    p {
+      font-size: $default;
+    }
+    p+p {
+      font-size: $twelve;
+    }
+  }
+  @include respondTo(tabletPortrait) {
+    p {
+      font-size: $default;
+    }
+    p+p {
+      font-size: $twelve;
+    }
+  }
+}
 
 .button-common {
-  padding: 0.750em 1.375em;
+  padding: $twelve 1.375em;
   text-align: center;
   background: $blue;
   color: $white;
@@ -20,181 +320,5 @@
 
   &.medium {
     width: 9.375em;
-  }
-}
-
-.center {
-  display: block;
-  margin: 0 auto;
-}
-
-.common-block {
-  p {
-    text-align: center;
-    color: $blackDark;
-    font-weight: 600;
-    font-size: 1.250em;
-    margin: 2.500em 0 0;
-    span {
-      color: $blue;
-    }
-  }
-
-  p+p {
-    color: $greyLight;
-    font-size: 14px;
-    font-weight: normal;
-    margin: 0.625em 0 1.875em;
-  }
-}
-
-
-header {
-  font-family: 'arial';
-  background: $blue;
-  height: 4.375em;
-  padding: 0em 7.500em;
-  h1 {
-    width: 100%;
-    height: 70px;
-    background: url('../images/brand.png') no-repeat 0 0;
-    background-size: contain;
-    text-indent: -99999px;
-    margin: 0;
-    color: $white;
-  }
-
-  .lst-nav {
-    ul {
-      margin: 1.875em 0 0;
-      li {
-        display: inline;
-        color: $white;
-        padding-left: 0.313em;
-        font-size: 1.000em;
-        font-weight: bold;
-        a {
-          text-decoration: none;
-          color: $white;
-        }
-
-        a:after {
-          content: '';
-          border-right: 2px solid $white;
-          padding: 0 0.313em;
-        }
-      }
-    }
-  }
-}
-
-.content-themes {
-  background: url('../images/bg-hero.jpg');
-  overflow: hidden;
-  padding-bottom: 1.250em;
-  border-bottom: 1px solid $greySoft;
-}
-
-.content-features {
-  margin: 2.500em 0 0;
-  h2 {
-    color: $blackDark;
-    font-size: 1.500em;
-    font-family: 'arial';
-  }
-  ul {
-    margin: 0;
-    padding: 0;
-    li {
-      font-family: 'arial';
-      font-size: 0.750em;
-      list-style: none;
-      padding: 0.313em 0;
-    }
-  }
-}
-
-.content-register {
-  margin: 2.500em 0 0;
-  h3 {
-    font-family: 'arial';
-    font-size: 1.500em;
-  }
-  p {
-    font-size: 0.750em;
-    color: $greyLight;
-    display: inline-block;
-    vertical-align: top;
-    padding-right: 1.250em;
-  }
-  form {
-    margin: 3.750em 0 0 4.375em;
-    input {
-      width: 75%;
-      height: 3.125em;
-    }
-     ::-webkit-input-placeholder {
-      color: $greySoftLight;
-      font-size: 0.875em;
-    }
-     ::-moz-placeholder {
-      color: $greySoftLight;
-      font-size: 0.875em;
-    }
-     :-ms-input-placeholder {
-      color: $greySoftLight;
-      font-size: 0.875em;
-    }
-     :-moz-placeholder {
-      color: $greySoftLight;
-      font-size: 0.875em;
-    }
-    button {
-      border: transparent;
-    }
-  }
-}
-
-.content-order {
-  margin: 3.125em 0;
-  background: url('../images/bg-hero.jpg');
-  overflow: hidden;
-  padding-bottom: 1.250em;
-  border-top: 1px solid $greySoft;
-}
-
-footer {
-  background: $marine;
-  padding: 4.375em 4.375em 5.625em;
-  nav {
-    ul {
-      list-style: none;
-      margin: 0;
-      text-align: center;
-      li {
-        display: inline;
-        font-size: 0.875em;
-        a {
-          color: $blackDark;
-          text-decoration: none;
-          padding: 0.313em;
-          font-weight: bold;
-        }
-        &:nth-child(4) {
-          a{
-            color: $blueLight;
-          } 
-        }
-      }
-      li:before {
-        content: '';
-        border-right: 1px solid $blueLight;
-      }
-    }
-  }
-  p {
-    color: $blueOcean;
-    font-size: 1.000em;
-    text-align: center;
   }
 }

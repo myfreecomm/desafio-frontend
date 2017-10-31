@@ -15,6 +15,11 @@ $largeScreen: 1400px;
       @content;
     }
   }
+  @else if $media==tabletPortrait {
+    @media (min-width: $tabletPortrait) and (max-width: $tabletLandscape) and (orientation : portrait){
+      @content;
+    }
+  }
   @else if $media==smallScreen {
     @media (max-width: $desktop) {
       @content;
@@ -32,4 +37,17 @@ $largeScreen: 1400px;
   -moz-border-radius: $radius;
   -ms-border-radius: $radius;
   border-radius: $radius;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow: inset $top $left $blur $color;
+    -moz-box-shadow: inset $top $left $blur $color;
+    box-shadow: inset $top $left $blur $color;
+  }
+  @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
 }
