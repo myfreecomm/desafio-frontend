@@ -1,0 +1,46 @@
+/**
+ ** Global Style
+ **/
+
+ body {
+   background: url('../img/bg.jpg') repeat;
+ }
+
+ section, footer {
+   padding: 50px 0;
+ }
+
+ footer {
+   background-color: #E5EAF0;
+ }
+
+
+ /**
+  ** Navbar
+  **/
+
+  #mainNav {
+    background-color: #215AA9;
+  }
+
+
+/**
+ ** Content
+ **/
+
+ .whiteSection {
+   background-color: #FFF;
+   border-top: 1px solid #CCC;
+   border-bottom: 1px solid #CCC;
+ }
+
+ #spotlight img, #purchase img {
+   margin:30px 0 40px;
+ }
+
+
+/**
+ ** Super Class
+ **/
+
+ .sc-mt-50 {margin-top: 50px;}
