@@ -1,0 +1,35 @@
+$smartphone: 480px;
+$tabletPortrait: 767px;
+$tabletLandscape: 1024px;
+$desktop: 1174px;
+$largeScreen: 1400px;
+
+@mixin respondTo($media) {
+  @if $media==smartphone {
+    @media (max-width: $smartphone) {
+      @content;
+    }
+  }
+  @else if $media==tablet {
+    @media (min-width: $tabletPortrait) and (max-width: $tabletLandscape) {
+      @content;
+    }
+  }
+  @else if $media==smallScreen {
+    @media (max-width: $desktop) {
+      @content;
+    }
+  }
+  @else if $media==desktop {
+    @media (min-width: $desktop) {
+      @content;
+    }
+  }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}

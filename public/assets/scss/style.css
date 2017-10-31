@@ -1,0 +1,200 @@
+@import 'mixin';
+@import 'colors';
+@import 'medias';
+
+.button-common {
+  padding: 0.750em 1.375em;
+  text-align: center;
+  background: $blue;
+  color: $white;
+  text-decoration: none;
+  font-size: 0.813em;
+  font-weight: 600;
+  @include border-radius(5%);
+
+  &.large {
+    width: 10.000em;
+  }
+
+  &.small {}
+
+  &.medium {
+    width: 9.375em;
+  }
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.common-block {
+  p {
+    text-align: center;
+    color: $blackDark;
+    font-weight: 600;
+    font-size: 1.250em;
+    margin: 2.500em 0 0;
+    span {
+      color: $blue;
+    }
+  }
+
+  p+p {
+    color: $greyLight;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0.625em 0 1.875em;
+  }
+}
+
+
+header {
+  font-family: 'arial';
+  background: $blue;
+  height: 4.375em;
+  padding: 0em 7.500em;
+  h1 {
+    width: 100%;
+    height: 70px;
+    background: url('../images/brand.png') no-repeat 0 0;
+    background-size: contain;
+    text-indent: -99999px;
+    margin: 0;
+    color: $white;
+  }
+
+  .lst-nav {
+    ul {
+      margin: 1.875em 0 0;
+      li {
+        display: inline;
+        color: $white;
+        padding-left: 0.313em;
+        font-size: 1.000em;
+        font-weight: bold;
+        a {
+          text-decoration: none;
+          color: $white;
+        }
+
+        a:after {
+          content: '';
+          border-right: 2px solid $white;
+          padding: 0 0.313em;
+        }
+      }
+    }
+  }
+}
+
+.content-themes {
+  background: url('../images/bg-hero.jpg');
+  overflow: hidden;
+  padding-bottom: 1.250em;
+  border-bottom: 1px solid $greySoft;
+}
+
+.content-features {
+  margin: 2.500em 0 0;
+  h2 {
+    color: $blackDark;
+    font-size: 1.500em;
+    font-family: 'arial';
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      font-family: 'arial';
+      font-size: 0.750em;
+      list-style: none;
+      padding: 0.313em 0;
+    }
+  }
+}
+
+.content-register {
+  margin: 2.500em 0 0;
+  h3 {
+    font-family: 'arial';
+    font-size: 1.500em;
+  }
+  p {
+    font-size: 0.750em;
+    color: $greyLight;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 1.250em;
+  }
+  form {
+    margin: 3.750em 0 0 4.375em;
+    input {
+      width: 75%;
+      height: 3.125em;
+    }
+     ::-webkit-input-placeholder {
+      color: $greySoftLight;
+      font-size: 0.875em;
+    }
+     ::-moz-placeholder {
+      color: $greySoftLight;
+      font-size: 0.875em;
+    }
+     :-ms-input-placeholder {
+      color: $greySoftLight;
+      font-size: 0.875em;
+    }
+     :-moz-placeholder {
+      color: $greySoftLight;
+      font-size: 0.875em;
+    }
+    button {
+      border: transparent;
+    }
+  }
+}
+
+.content-order {
+  margin: 3.125em 0;
+  background: url('../images/bg-hero.jpg');
+  overflow: hidden;
+  padding-bottom: 1.250em;
+  border-top: 1px solid $greySoft;
+}
+
+footer {
+  background: $marine;
+  padding: 4.375em 4.375em 5.625em;
+  nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      text-align: center;
+      li {
+        display: inline;
+        font-size: 0.875em;
+        a {
+          color: $blackDark;
+          text-decoration: none;
+          padding: 0.313em;
+          font-weight: bold;
+        }
+        &:nth-child(4) {
+          a{
+            color: $blueLight;
+          } 
+        }
+      }
+      li:before {
+        content: '';
+        border-right: 1px solid $blueLight;
+      }
+    }
+  }
+  p {
+    color: $blueOcean;
+    font-size: 1.000em;
+    text-align: center;
+  }
+}
