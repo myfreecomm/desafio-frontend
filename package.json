@@ -1,0 +1,41 @@
+{
+  "name": "desafio-design-01",
+  "version": "1.0.0",
+  "description": "A idéia deste desafio é nos permitir avaliar melhor as habilidades de candidatos à vagas de Designer, de vários níveis.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "dev": "^0.1.3",
+    "node-sass": "^4.5.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^14.5.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5",
+    "run-sequence": "^2.2.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulo70/desafio-design-01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulo70/desafio-design-01/issues"
+  },
+  "homepage": "https://github.com/paulo70/desafio-design-01#readme"
+}
