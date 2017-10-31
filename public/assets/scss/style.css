@@ -1,0 +1,149 @@
+@import 'mixin';
+@import 'colors';
+@import 'medias';
+
+.button-common {
+  width: 8.750em;
+  text-align: center;
+  background: $blue;
+  color: $white;
+  text-decoration: none;
+  font-size: 0.813em;
+  @include border-radius(5%);
+
+  &.large {}
+
+  &.small {}
+
+  &.medium {
+    padding: 0.750em 1.375em;
+  }
+}
+
+.box-common {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+
+header {
+  font-family: 'arial';
+  background: $blue;
+  height: 4.375em;
+  padding: 1.250em 7.500em;
+  h1 {
+    width: 100%;
+    height: 70px;
+    background: url('../images/logo.png') no-repeat 0 -20px;
+    background-size: contain;
+    text-indent: -99999px;
+    margin: 0;
+    color: $white;
+  }
+
+  .lst-nav {
+    ul {
+      padding: 0.313em 0;
+      margin: 0;
+      li {
+        display: inline;
+        color: $white;
+        padding-left: 0.313em;
+        font-size: 1.000em;
+        font-weight: bold;
+        a {
+          text-decoration: none;
+          color: $white;
+        }
+
+        a:after {
+          content: '';
+          border-right: 2px solid $white;
+          padding: 0 0.313em;
+        }
+      }
+    }
+  }
+  .figure {
+    background: url('../images/bg-devices.png') no-repeat 0 30px;
+    background-size: contain;
+    width: 100%;
+    height: 415px;
+  }
+  p {
+    text-align: center;
+    color: $blackDark;
+    font-weight: 600;
+    font-size: 1.250em;
+    margin: 2.500em 0 0;
+  }
+
+  p+p {
+    color: $greyLight;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0.625em 0 1.875em;
+  }
+}
+
+.content-features {
+  margin: 2.500em 0 0;
+  h2 {
+    color: $blackDark;
+    font-size: 1.500em;
+    font-family: 'arial';
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      font-family: 'arial';
+      font-size: 0.750em;
+      list-style: none;
+      padding: 0.313em 0;
+    }
+  }
+}
+
+.content-register {
+  margin: 2.500em 0 0;
+  h3 {
+    font-family: 'arial';
+    font-size: 1.500em;
+  }
+  p {
+    font-size: 0.750em;
+    color: $greyLight;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 1.250em;
+  }
+  form {
+    margin: 3.750em 0 0 4.375em;
+    input {
+      width: 75%;
+      height: 3.125em;
+    }
+     ::-webkit-input-placeholder {
+      color: $greySoftLight;
+      font-size: 0.875em;
+    }
+     ::-moz-placeholder {
+      color: $greySoftLight;
+      font-size: 0.875em;
+    }
+     :-ms-input-placeholder {
+      color: $greySoftLight;
+      font-size: 0.875em;
+    }
+     :-moz-placeholder {
+      color: $greySoftLight;
+      font-size: 0.875em;
+    }
+  }
+}
