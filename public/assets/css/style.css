@@ -1,5 +1,4 @@
 header {
-  font-family: 'arial';
   background: #215aa9;
   height: 4.375em;
   padding: 0em 7.500em; }
@@ -66,7 +65,7 @@ header {
   transition: all 1ms ease-in; }
 
 .content-themes {
-  background: url("../images/bg-hero.jpg");
+  background: url("../images/bg-pattern.jpg");
   overflow: hidden;
   padding: 1.25em 0em;
   border-bottom: 1px solid #e4e4e4; }
@@ -75,13 +74,11 @@ header {
   margin: 2.5em 0 0; }
   .content-features h2 {
     color: #3a3a3a;
-    font-size: 1.5em;
-    font-family: 'arial'; }
+    font-size: 1.5em; }
   .content-features ul {
     margin: 0;
     padding: 0; }
     .content-features ul li {
-      font-family: 'arial';
       font-size: 0.75em;
       list-style: none;
       padding: 0.313em 0; }
@@ -97,7 +94,6 @@ header {
 .content-register {
   margin: 2.5em 0 0; }
   .content-register h3 {
-    font-family: 'arial';
     font-size: 1.5em; }
   .content-register p {
     font-size: 0.75em;
@@ -141,7 +137,7 @@ header {
 
 .content-order {
   margin: 3.125em 0;
-  background: url("../images/bg-hero.jpg");
+  background: url("../images/bg-pattern.jpg");
   overflow: hidden;
   padding-bottom: 1.25em;
   border-top: 1px solid #e4e4e4; }
