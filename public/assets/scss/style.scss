@@ -1,8 +1,7 @@
 @import 'mixin';
 @import 'util_variables';
 
-header {
-  font-family: 'arial';
+header 
   background: $blue;
   height: $seventy;
   padding: 0em 7.500em;
@@ -109,13 +108,12 @@ header {
   h2 {
     color: $blackDark;
     font-size: $twentyFour;
-    font-family: 'arial';
   }
   ul {
     margin: 0;
     padding: 0;
     li {
-      font-family: 'arial';
+ 
       font-size: $twelve;
       list-style: none;
       padding: $five 0;
@@ -138,7 +136,6 @@ header {
 .content-register {
   margin: $forty 0 0;
   h3 {
-    font-family: 'arial';
     font-size: $twentyFour;
   }
   p {
