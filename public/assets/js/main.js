@@ -6,7 +6,7 @@
       if (win.pageYOffset >= 80) {
         $element.classList.add('fixed-effects');
       } else {
-        return $element.classList.remove('fixed-effects');
+        $element.classList.remove('fixed-effects');
       }
     }
 
@@ -14,7 +14,7 @@
 
     return {
       fixedHeader
-    }
+    };
 
   })();
 
