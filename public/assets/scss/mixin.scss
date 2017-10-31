@@ -16,7 +16,7 @@ $largeScreen: 1400px;
     }
   }
   @else if $media==tabletPortrait {
-    @media (min-width: $tabletPortrait) and (max-width: $tabletLandscape) and (orientation : portrait){
+    @media (min-width: $tabletPortrait) and (max-width: $tabletLandscape) and (orientation: portrait) {
       @content;
     }
   }

@@ -315,9 +315,6 @@ footer {
   &.large {
     width: 10.000em;
   }
-
-  &.small {}
-
   &.medium {
     width: 9.375em;
   }
