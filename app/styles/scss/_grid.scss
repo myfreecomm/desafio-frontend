@@ -1,0 +1,60 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+
+html {
+	font-size: 10px;
+	font-family: sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+ul, li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+img {
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+a{
+	text-decoration: none;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 560px;
+}
+
+@media (min-width: 769px) {
+	.container {
+		max-width: 960px;
+	}
+	.linha{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.uma.coluna { width: 8.33%; }
+	.duas.colunas { width: 16.66%; }
+	.tres.colunas { width: 24.99%; }
+	.quatro.colunas { width: 33.32%; }
+	.cinco.colunas { width: 41.65%; }
+	.seis.colunas { width: 49.98%; }
+	.sete.colunas { width: 58.31%; }
+	.oito.colunas { width: 66.64%; }
+	.nove.colunas { width: 74.97%; }
+	.dez.colunas { width: 83.3%; }
+	.onze.colunas { width: 91.63%; }
+	.doze.colunas { width: 99.96%; }
+}
