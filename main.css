@@ -1,0 +1,224 @@
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: arial;
+	font-size: 14px;
+	color: #767676;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* STRUCTURE */
+.grid {
+	width: 940px;
+	margin: auto;
+}
+
+/* TITLES AND TEXT */
+.logo {display: inline-block;}
+.logo img {
+	border: none;
+	height: 36px;
+	width: 283px;
+}
+h2 {
+	color: #3a3a3a;
+	font-family: arial;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0 0 15px 0;
+}
+a {text-decoration: none;}
+.highlight {color: #2f62f2;}
+.center {text-align: center;}
+p {line-height: 1.4em;}
+
+/* HEADER */
+header {
+	background: #215aa9;
+	padding: 20px 0 20px 0;
+	width: 100%;
+}
+
+/* MAIN MENU */
+.main-menu {
+	float: right;
+	margin-top: 15px;
+}
+.main-menu a, footer nav a {
+	border-left: 2px solid #fff;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 0 10px 0 10px;
+}
+.main-menu a:first-child {border-left: none;}
+
+/* SECTIONS */
+section {padding-top: 40px;}
+#main-banner, #order-spotlight {
+	background: url("../img/bg/section-bg.png");
+	background-repeat: repeat;
+}
+.main-banner {
+	background: url("../img/bg/main-banner.png") no-repeat;
+	height: 383px;
+	margin: 0 0 40px 0;
+	width: 100%;
+}
+#main-banner .center {
+	margin-bottom: 40px;
+}
+.features-banner {
+	background: url("../img/bg/theme-features-banner.png") no-repeat;
+	height: 304px;
+	float:right;
+	margin-top: -40px;
+	width: 513px;
+}
+.spotlight-banner {
+	background: url("../img/bg/spotlight-banner.png") no-repeat;
+	height: 265px;
+	margin-bottom: 70px;
+	width: 946px;
+}
+.theme-features form {
+	margin: 40px 0 40px 0;
+	width: 90%;
+}
+#order-spotlight {padding-bottom: 1px;}
+#order-spotlight h2 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+#order-spotlight p {text-align: center;}
+#order-spotlight .button {
+	display: block;
+	margin: 30px auto 50px auto;
+	width: 95px;
+
+}
+
+/* BUTTONS */
+.button {
+	background: #2f62f2;
+	border-radius: 5px;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 10px 20px;
+	color: #fff; 
+}
+
+/* BORDERS */
+.border-bottom {border-bottom: 1px solid #e4e4e4;}
+
+/* LISTS */
+.features-list {
+	float: left;
+	margin-bottom: 75px;
+	width: 400px;
+}
+.features-list li {
+	font-size: 12px;
+	margin-bottom: 6px;
+}
+.icon-list {
+	margin-top: 20px;
+}
+.icon-list li {
+	display: inline-block;
+	font-size: 12px;
+	width: 33%;
+}
+.icon-list .icon {
+	height: 52px;
+	float: left;
+	width: 52px;
+}
+.icon-list .text {
+	float: left;
+	line-height: 1.5em;
+	margin-left: 30px;
+	width: 208px;
+}
+.icon-list h2 {
+	margin-bottom: 25px;
+}
+.icon.engine {background: url("../img/icons/engine-ico.png") no-repeat;}
+.icon.star {background: url("../img/icons/star-ico.png") no-repeat;}
+.icon.search {background: url("../img/icons/search-ico.png") no-repeat;}
+
+/* CLEARFIX */
+.clearfix {clear:both;}
+
+/* FORM ITENS */
+input[type=text] {
+	border: 1px solid #f5f5f5;
+	border-radius: 5px;
+	box-shadow: inset 1px 1px 2px #c5c5c5;
+	margin-left: 55px;
+	padding:15px 15px;
+	width: 75%;
+}
+input[type=submit].button {
+	border: none;
+	margin-left: 5px;
+	padding: 15px 20px;
+}
+
+/* FOOTER */
+footer {
+	background: #e5eaf1;
+	padding: 60px 0 30px 0;
+	width: 100%;
+}
+footer nav {text-align: center;}
+footer nav a {
+	color: #3a3a3a;
+	border-color: #2f62f2;
+}
+footer nav a:first-child {border-left: none;}
+.disclaimer {
+	color: #2c5ee6;
+	text-align: center;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
