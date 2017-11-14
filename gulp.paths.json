@@ -1,0 +1,29 @@
+{
+	"src": {
+		"views": {
+			"files": "./src/*.njk",
+			"watch": "./src/**/*.njk"
+		},
+    	"css": {
+    		"files": [
+				"./src/scss/main.scss",
+				"./src/components/**/*.scss"
+			],
+			"watch": [
+				"./src/**/*.scss",
+				"./src/components/**/*.scss"
+			]
+    	},
+		"js": [
+			"./src/js/**/*.js",
+			"./src/components/**/*.js"
+		],
+		"img": "./src/img/**/*"
+	},
+	"dest": {
+		"views": "./dist",
+		"css": "./dist/css",
+		"js": "./dist/js",
+		"img": "./dist/img"
+	}
+}
