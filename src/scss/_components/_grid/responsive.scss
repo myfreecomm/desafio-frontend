@@ -1,0 +1,15 @@
+//RESPONSIVE
+$tags: map-get($grid, tags);
+@each $tag in map-keys($tags) {
+  @include query-max($tag) {
+    .grid {
+      > .is-#{$tag} {
+        flex: 1 1 100%;
+        width: 100%;
+        min-width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+}

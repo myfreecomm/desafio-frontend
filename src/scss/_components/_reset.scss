@@ -1,0 +1,27 @@
+//RESET
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    outline: 0;
+    box-sizing: border-box;
+}
+html, body {
+    min-height: 100%;
+    height: 100%;
+
+    //FLEXBOX IOS
+    width: 100%;
+}
+body {
+   font-family: 'LucidaGrande';
+   font-size: 10px;
+   overflow-x: hidden;
+}
+iframe {
+    display: block;
+}
+textarea {
+    resize: none;
+}
