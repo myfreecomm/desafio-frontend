@@ -1,0 +1,17 @@
+//CONFIG
+$color: (
+  'primary': #2f62f2,
+  'secondary': #215aa9
+);
+
+$grid: (
+  'container': 1170,
+  'columns': 12,
+  'tags': (
+    'mobile': 368px,
+    'plus': 568px,
+    'tablet': 768px,
+    'desktop': 1024px,
+    'wide': 1280px
+  )
+);
