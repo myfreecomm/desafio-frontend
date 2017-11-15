@@ -58,6 +58,7 @@ nav ul li a {
     background: url(img/Background.jpg);
     text-align: center;
     border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 50px;
 }
 
 .main-content img {
@@ -88,4 +89,89 @@ nav ul li a {
     padding: 12px 15px;
     border-radius: 4px;
     text-decoration: none;
+}
+
+.theme-features {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.content-feature {
+    display: inline-block;
+    float: left;
+}
+
+.content-feature h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: #3a3a3a;
+    margin-top: 0;
+}
+
+.content-feature ul {
+    padding: 0;
+}
+
+.content-feature ul li {
+    list-style: none;
+    font-size: 12px;
+    color: #414141;
+    margin-bottom: 3px;
+}
+
+.content-feature-img {
+    display: inline-block;
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.content-vantagens {
+    width: 960px;
+    margin: 40px auto;
+}
+
+.vantagens {
+    width: 300px;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.vantagens:last-child {
+    margin-right: 0;
+}
+
+.vantagens h2 {
+    font-size: 24px;
+    color: #3a3a3a;
+}
+
+.vantagens .content-img {
+    display: inline-block;
+    float: left;
+    margin-right: 40px;
+}
+
+.vantagens .content-text {
+    width: 182px;
+    font-size: 12px;
+    color: #767676;
+    display: inline-block;
+}
+
+button.btn {
+    border: none;
+}
+
+.container-newsletter {
+    text-align: center;
+}
+
+.container-newsletter input[type="text"] {
+    width: 690px;
+    padding: 12px 15px;
+    border-radius: 4px;
+    margin-right: 12px;
 }
