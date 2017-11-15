@@ -89,6 +89,13 @@ nav ul li a {
     padding: 12px 15px;
     border-radius: 4px;
     text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    transition: 0.4s;
+    background-color: #215aa9;
 }
 
 .theme-features {
@@ -163,6 +170,7 @@ nav ul li a {
 
 button.btn {
     border: none;
+    cursor: pointer;
 }
 
 .container-newsletter {
@@ -174,4 +182,65 @@ button.btn {
     padding: 12px 15px;
     border-radius: 4px;
     margin-right: 12px;
+}
+
+.order-content {
+    height: 610px;
+    background: url(img/Background.jpg);
+    border-top: 1px solid #e4e4e4;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.order-content img {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.order-content h2 {
+    font-size: 24px;
+    color: #3a3a3a;
+    margin: 0;
+}
+
+.order-content h2 a {
+    text-decoration: none;
+    color: #2f62f2;
+}
+
+.order-content p {
+    font-size: 14px;
+    color: #767676;
+    margin-top: 10px;
+    margin-bottom: 45px;
+}
+
+footer {
+    width: 100%;
+    height: 167px;
+    background-color: #e5eaf1;
+    text-align: center;
+    padding: 65px 0;
+}
+
+footer nav {
+    float: none;
+}
+
+footer nav ul li {
+    border-right: 1px solid #2f62f2;
+}
+
+footer nav ul li a {
+    color: #3a3a3a;
+}
+
+footer nav ul li a.current {
+    color: #2f62f2;
+}
+
+.copyright {
+    color: #2c5ee6;
+    font-size: 16px;
+    margin-top: 25px;
 }
