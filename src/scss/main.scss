@@ -1,8 +1,7 @@
-//IMPORTS
+//imports
 @import
-  '_components/config',
-  '_components/mixins',
-  '_components/reset',
-  '_components/layout',
-  '_components/buttons',
-  '_components/_grid/all';
+'./deps',
+'./_components/grid/all',
+'./_components/reset',
+'./_components/helpers',
+'./_components/layout';

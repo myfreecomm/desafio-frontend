@@ -1,0 +1,45 @@
+@import '../../scss/deps';
+
+.btn {
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+
+  &:not(.-bigger) {
+    font-size: 1.3em;
+    padding: 11px 20px;
+  }
+
+  &.-bigger {
+    font-size: 1.4em;
+    padding: 16px 25px;
+  }
+
+  //animation
+  &:before {
+    background: rgba(255, 255, 255, .1);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: .2s;
+    width: 0;
+    z-index: 0;
+  }
+
+  &:hover:before { width: 100% }
+  // /animation
+
+  &:not(.btn-white) { @extend %cl-white }
+
+  &.btn-white { @extend %cl-primary }
+
+  @each $color in map-keys($colors) {
+    &.btn-#{$color} { background: map-get($colors, $color) }
+  }
+}

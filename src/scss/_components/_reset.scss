@@ -1,27 +1,28 @@
-//RESET
+//simple reset
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    list-style: none;
-    outline: 0;
-    box-sizing: border-box;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-html, body {
-    min-height: 100%;
-    height: 100%;
 
-    //FLEXBOX IOS
-    width: 100%;
-}
+html,
 body {
-   font-family: 'LucidaGrande';
-   font-size: 10px;
-   overflow-x: hidden;
+  min-height: 100vh;
+  width: 100%;
 }
+
+body {
+  font-family: 'Arial';
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
 iframe {
-    display: block;
+  display: block;
 }
+
 textarea {
-    resize: none;
+  resize: none;
 }

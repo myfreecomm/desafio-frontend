@@ -1,0 +1,4 @@
+//colors
+@each $color in map-keys($colors) {
+  %cl-#{$color} { color: map-get($colors, $color) }
+}

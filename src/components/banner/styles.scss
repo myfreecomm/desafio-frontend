@@ -1,0 +1,7 @@
+@import '../../scss/deps';
+
+.banner {
+  .devices { padding: 40px 0 }
+  .title { margin-bottom: 30px }
+  .mark { @extend %cl-primary }
+}

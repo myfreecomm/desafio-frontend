@@ -1,0 +1,54 @@
+@import '../../scss/deps';
+
+@include query-min('tablet') {
+  .header {
+    .shadow,
+    .open-nav { display: none }
+  }
+}
+
+@include query-max('tablet') {
+  .header {
+    .nav {
+      background: #fff;
+      box-shadow: -.3em -.3em 1em .1em rgba(0, 0, 0, .2);
+      max-width: 300px;
+      min-height: 100vh;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+
+      .menu {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 75px 15px 0;
+      }
+
+      .menu .link,
+      .menu .text { width: 100% }
+
+      .menu .link {
+        padding: 15px 0;
+      }
+
+      .menu .text {
+        color: map-get($colors, secondary);
+        padding: 0;
+      }
+    }
+
+    //logo
+    .logo { max-width: 200px }
+
+    //open nav
+    .input-open-nav:checked ~ .nav { transition: .2s }
+
+    .input-open-nav:not(:checked) {
+      ~ .nav { transform: translateX(100%) }
+      ~ .shadow { display: none }
+    }
+    // /open nav
+  }
+}

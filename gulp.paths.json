@@ -4,26 +4,29 @@
 			"files": "./src/*.njk",
 			"watch": "./src/**/*.njk"
 		},
-    	"css": {
-    		"files": [
+  	"css": {
+			"files": [
 				"./src/scss/main.scss",
 				"./src/components/**/*.scss"
 			],
-			"watch": [
-				"./src/**/*.scss",
+			"all": [
+				"./src/scss/**/*.scss",
 				"./src/components/**/*.scss"
 			]
-    	},
+  	},
 		"js": [
 			"./src/js/**/*.js",
 			"./src/components/**/*.js"
 		],
-		"img": "./src/img/**/*"
+		"img": [
+			"./src/images/**/*",
+			"./src/components/**/images/**/*"
+		]
 	},
 	"dest": {
 		"views": "./dist",
 		"css": "./dist/css",
 		"js": "./dist/js",
-		"img": "./dist/img"
+		"img": "./dist/images"
 	}
 }

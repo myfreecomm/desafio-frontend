@@ -1,1 +1,7 @@
-<footer>footer</footer>
+<footer class="footer">
+  {% set menu = { links: [ 'Videos', 'Forum', 'Purchase Today', 'Demo' ], type: '-footer' } %}
+  {% include "menu/template.njk" %}
+  <p class="copyright">
+    Copyright  2014.  All  Rights  Reserved
+  </p>
+</footer>

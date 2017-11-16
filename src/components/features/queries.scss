@@ -1,0 +1,37 @@
+@import '../../scss/deps';
+
+@include query-min('tablet') {
+  .features {
+    .infos {
+      .item:not(:first-child, :last-child) { margin: 0 20px }
+
+      .item:first-child { margin-right: 20px }
+
+      .item:last-child { margin-left: 20px }
+
+      .box-icon { margin-right: 50px }
+    }
+  }
+}
+
+@include query-max('tablet') {
+  .features {
+    //left
+    .left {
+      padding-bottom: 50px;
+
+      .title,
+      .list .item { text-align: center }
+    }
+
+    //infos
+    .infos {
+      .item:not(:last-child) { padding-bottom: 50px }
+
+      .text { margin-top: 20px }
+
+      .title,
+      .text { text-align: center }
+    }
+  }
+}

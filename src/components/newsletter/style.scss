@@ -1,0 +1,15 @@
+@import '../../scss/deps';
+
+.newsletter {
+  margin-bottom: 50px;
+
+  .input {
+    border: 1px solid #f5f5f5;
+    border-radius: 3px;
+    box-shadow: inset .1em .1em .1em rgba(0, 0, 0, .2);
+    padding: 20px;
+    transition: .2s;
+
+    &:focus { border: 1px solid map-get($colors, primary) }
+  }
+}

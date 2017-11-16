@@ -1,0 +1,9 @@
+{% if button.isBigger %}
+  {% set bigger = ' -bigger' %}
+{% endif %}
+
+{% if button.isLink %}
+  <a class="btn btn-{{ button.type }}{{ bigger }} is-mobile" href="#">{{ button.text }}</a>
+{% else %}
+  <button class="btn btn-{{ button.type }}{{ bigger }} is-mobile">{{ button.text }}</button>
+{% endif %}
