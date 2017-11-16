@@ -1,0 +1,7 @@
+Sugestão:
+
+- Mudar a cor do background do footer. O que seria mais atrativo, na minha concepção, é o azul no mesmo tom do header ou um preto com as letras branco, uma vez que é mostrado o branco e preto nas imagens dos dispositivos móveis e da tela do mac;
+- Mudar a font e não usarmos fonts padrao, se a ideia for entregar algo único para o cliente...;
+- Mudar a font da logo;
+- Mostrar uma seta de mouse em cima de um botao e um palavra linkada para saber a cor do hover;
+- Diminuir a quantidade de icones da primeira imagem.
