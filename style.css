@@ -17,6 +17,10 @@ header {
     padding: 20px 0;
 }
 
+header.fixed {
+    position: fixed;
+}
+
 .content-header {
     width: 960px;
     margin: 0 auto;
@@ -108,7 +112,7 @@ nav ul li a {
     float: left;
 }
 
-.content-feature h2{
+.content-feature h2 {
     font-size: 24px;
     font-weight: bold;
     color: #3a3a3a;
