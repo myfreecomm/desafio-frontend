@@ -1,0 +1,16 @@
+media_queries = {
+	mobile : 'only screen and (max-width: 767px)',
+	tablet : 'only screen and (min-width: 768px) and (max-width: 1279px)',
+	desktop : 'only screen and (min-width: 1280px)'
+}
+// @stylint off
+breakpoint(breakpoints) {
+	conditions = ();
+	for breakpoint in breakpoints {
+		push(conditions, media_queries[breakpoint]);
+	}
+	conditions = join(", ", conditions);
+	@media conditions {
+		{block};
+	}
+}

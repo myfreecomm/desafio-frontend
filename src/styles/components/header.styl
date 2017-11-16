@@ -1,0 +1,62 @@
+.header {
+	background: $blue1;
+	height: 70px;
+	width: 100%;
+
+	&.fixed {
+		position: fixed;
+	}
+	+breakpoint(mobile) {
+		height: 100px;
+	}
+	&-links {
+		align-items: center;
+		display: flex;
+		height: 100%;
+		justify-content: space-between;
+
+		+breakpoint(mobile) {
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+	&-h1 {
+		margin: 0;
+		padding: 0 10px;
+
+		a {
+			color: #fff;
+			font-size: 24pt;
+			font-weight: 500;
+
+			&:focus,
+			&:hover {
+				color: $gray1;
+			}
+			span {
+				font-size: 14pt;
+				text-transform: uppercase;
+			}
+		}
+	}
+	&-nav li {
+		color: #fff;
+		display: inline-block;
+		font-size: 12pt;
+    	font-weight: 600;
+
+		& + li:before {
+			content: "|";
+			color: inherit;
+		}
+		a {
+			color: inherit;
+			padding: 0 10px;
+
+			&:focus,
+			&:hover {
+				color: $gray1;
+			}
+		}
+	}
+}
