@@ -1,0 +1,4 @@
+//backgrounds
+@each $color in map-keys($colors) {
+  %bg-#{$color} { background: map-get($colors, $color) }
+}

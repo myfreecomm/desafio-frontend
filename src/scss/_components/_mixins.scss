@@ -1,0 +1,17 @@
+//all mixins
+
+//min width
+@mixin query-min($name, $queries: map-get($grid, tags)) {
+  $min: map-get($queries, $name);
+  @media (min-width: $min) {
+    @content;
+  }
+}
+
+//max width
+@mixin query-max($name, $queries: map-get($grid, tags)) {
+  $max: map-get($queries, $name);
+  @media (max-width: $max) {
+    @content;
+  }
+}

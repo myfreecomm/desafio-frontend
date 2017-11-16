@@ -1,0 +1,28 @@
+//simple reset
+* {
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+body {
+  font-family: 'Arial';
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+iframe {
+  display: block;
+}
+
+textarea {
+  resize: none;
+}

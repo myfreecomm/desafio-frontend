@@ -1,0 +1,42 @@
+@import '../../scss/deps';
+
+.menu {
+  padding: 15px 0;
+
+  .link {
+    font-size: 1.6em;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+    transition: .2s;
+  }
+
+  .link:hover:after { width: 100% }
+
+  .link:after {
+    background: currentColor;
+    bottom: 0;
+    color: inherit;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: width .2s;
+    width: 0;
+  }
+
+  .text { padding: 0 15px }
+
+  //menu types
+  &.-header {
+    .link:not(:hover) { @extend %cl-white }
+    .link:hover { color: lighten(map-get($colors, secondary), 50%) }
+    .item:not(:first-child) .text { border-left: 2px solid #fff }
+  }
+
+  &.-footer {
+    .link:not(:hover) { @extend %cl-black }
+    .link:hover { @extend %cl-primary }
+    .item:not(:first-child) .text { border-left: 2px solid map-get($colors, primary) }
+  }
+}

@@ -1,0 +1,6 @@
+//layout
+.container {
+  margin: 0 auto;
+  max-width: map-get($grid, container) * 1px;
+  width: 95%;
+}

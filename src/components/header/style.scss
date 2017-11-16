@@ -1,0 +1,125 @@
+@import '../../scss/deps';
+
+.header {
+  @extend %bg-secondary;
+  position: relative;
+  z-index: 1;
+
+  //fixed
+  &[data-active='true'] {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    .logo { max-width: 150px }
+    .open-nav { top: 4px }
+  }
+
+  //logo
+  .logo { padding: 15px 0 }
+
+  //open nav
+  .open-nav {
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 20px 15px;
+    position: fixed;
+    right: 12px;
+    top: 7px;
+    transition: .2s;
+    z-index: 3;
+
+    .bars .bar {
+      display: block;
+      height: 3px;
+      position: relative;
+      transition-property: background, transform;
+      width: 15px;
+    }
+
+    .bars .bar:before,
+    .bars .bar:after {
+      content: '';
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      transition-delay: .3s, 0s;
+      transition-duration: .3s, .3s;
+      width: 100%;
+    }
+
+    .bars .bar:before {
+      transition-property: top, transform;
+    }
+
+    .bars .bar:after {
+      transition-property: bottom, transform;
+    }
+  }
+
+  .input-open-nav:not(:checked) ~ .open-nav:not(:hover),
+  .input-open-nav:checked ~ .open-nav {
+    box-shadow: .1em .1em 1em .1em rgba(0, 0, 0, .2);
+  }
+
+  .input-open-nav:not(:checked) ~ .open-nav:not(:hover) {
+    transform: scale(.9);
+  }
+
+  .input-open-nav:not(:checked) ~ .open-nav {
+    @extend %bg-white;
+
+    .bars .bar {
+      transition-delay: .3s;
+    }
+
+    .bars .bar,
+    .bars .bar:after,
+    .bars .bar:before {
+      @extend %bg-secondary
+    }
+
+    .bars .bar:before { top: -5px }
+    .bars .bar:after { bottom: -5px }
+  }
+
+  .input-open-nav:checked ~ .open-nav {
+    @extend %bg-secondary;
+
+    .bars .bar {
+      transform: scale(1.4);
+      transition-delay: 0s;
+    }
+
+    .bars .bar:after,
+    .bars .bar:before {
+      @extend %bg-white;
+      transition-delay: 0s, .3s;
+    }
+
+    .bars .bar:before {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+
+    .bars .bar:after {
+      bottom: 0;
+      transform: rotate(45deg);
+    }
+  }
+  // /open nav
+
+  //shadow
+  .shadow {
+    background: rgba(0, 0, 0, .2s);
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+  }
+}

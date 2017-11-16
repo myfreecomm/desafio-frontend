@@ -1,0 +1,9 @@
+<div class="banner container">
+  <section class="grid -columns">
+    <figure class="devices grid col-12 valign-top">
+      <img class="col-12" src="./images/{{ banner.image }}" alt="{{ banner.alt }}">
+    </figure>
+    {% set title = banner.title %}
+    {% include "title/template.njk" %}
+  </section>
+</div>

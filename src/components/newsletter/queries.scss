@@ -1,0 +1,13 @@
+@import '../../scss/deps';
+
+@include query-min('tablet') {
+  .newsletter {
+    padding: 0 55px;
+
+    .input { margin-right: 15px }
+  }
+}
+
+@include query-max('tablet') {
+  .newsletter .input { margin-bottom: 20px }
+}

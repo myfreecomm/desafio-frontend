@@ -1,0 +1,37 @@
+{% extends "default.njk" %}
+
+{% block content %}
+  {% set banner = {
+    image: 'banner-top.png',
+    alt: 'Spotlight,  a  Wordpress  Theme  for  Creatives,  Agencies  &  Small  Businesses',
+    title: {
+      text: '<span class="mark">Spotlight</span>,  a  Wordpress  Theme  for  Creatives,  Agencies  &  Small  Businesses',
+      subtitle: 'Creativio is the perfect theme for the creative individual, agencies, freelancers, or small businesses. It comes packed full of goodies and comes with a world class design.',
+      button: {
+        text: 'View Demo',
+        isLink: true,
+        type: 'primary'
+      }
+    }
+  } %}
+  {% include "banner/template.njk" %}
+
+  {% include "features/template.njk" %}
+
+  {% include "purchase/template.njk" %}
+
+  {% set banner = {
+    image: 'banner-bottom.png',
+    alt: 'What  are  you  waiting  for?  order  Spotlight  today  and  blow  your  clients  minds! ',
+    title: {
+      text: 'What  are  you  waiting  for? <span class="mark">order  Spotlight</span> today  and  blow  your  clients  minds! ',
+      subtitle: 'Jumpstart your next web project with this professional and flexible WordPress theme.  Creativio will blow your client mind with the product you have made for them.',
+      button: {
+        text: 'Purchase | $40',
+        isLink: true,
+        type: 'primary'
+      }
+    }
+  } %}
+  {% include "banner/template.njk" %}
+{% endblock %}

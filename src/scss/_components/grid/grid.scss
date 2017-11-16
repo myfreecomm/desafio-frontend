@@ -1,0 +1,25 @@
+//grid default
+.grid {
+  display: flex;
+
+  &.-wrap {
+    flex-wrap: wrap;
+  }
+
+  &.-columns {
+    flex-direction: column;
+  }
+
+  > .col {
+    flex: 1 1;
+  }
+
+  //cols
+  @for $i from 1 through map-get($grid, columns) {
+    > .col-#{$i} {
+      flex: 1 0 calc((100% / #{map-get($grid, columns)} * #{$i}));
+      max-width: calc((100% / #{map-get($grid, columns)} * #{$i}));
+      width: calc((100% / #{map-get($grid, columns)} * #{$i}));
+    }
+  }
+}

@@ -1,0 +1,13 @@
+//grid responsive
+$tags: map-get($grid, tags);
+@each $tag in map-keys($tags) {
+  @include query-max($tag) {
+    .grid > .is-#{$tag} {
+      flex: 1 1 100%;
+      margin-left: 0;
+      margin-right: 0;
+      min-width: 100%;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<form class="newsletter grid col-12 -wrap halign-center" action="#" method="post">
+  <input class="input col is-tablet" type="text" name="" value="" placeholder="Enter your email address to get free theme updates ...">
+  {% set button = {
+    text: 'Sign Me Up',
+    type: 'primary',
+    isLink: true,
+    isBigger: true
+  } %}
+  {% include "button/template.njk" %}
+</form>
