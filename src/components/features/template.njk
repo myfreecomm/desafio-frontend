@@ -1,0 +1,76 @@
+<section class="features" data-ref=".header">
+  <div class="container">
+    <div class="grid -wrap">
+      <div class="left grid col-6 -columns is-tablet">
+        <h1 class="title">Theme Features</h1>
+        <ul class="list">
+          {% set list = {
+            items: [
+              'Filterable Porftolio with Pagination',
+              '3 Custom Widgets (Twitter, Flickr, Video)',
+              'Post Format Support (Images, Galleries, Standard, Audio, Video)',
+              'Theme Options Panel',
+              'Powerful Slider',
+              'Like Counter for Portfolio & Blog Items',
+              'Wordpress 3.0+ Ready (Menus & Featured Images)',
+              'Page Templates (Archives, Contact Form, Quote Form, Faq)',
+              'Shortcode Generator (Columns, Buttons, Toggles, Tabs, Alerts, Headings)',
+              'Full Localisation Support (contains .po / .mo files)',
+              'HTML 5 Valid Code',
+              'Support Forum',
+              'Layered PSDs for Customisation',
+              'The Best Documentation in the Industry'
+            ]
+          } %}
+
+          {% for item in list.items %}
+            <li class="item">{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="right grid col-6 halign-center is-tablet">
+        <figure class="grid valign-top col-12">
+          <img class="col-12" src="./images/features.png" alt="Theme Features">
+        </figure>
+      </div>
+      <ul class="infos grid -wrap halign-center col-12">
+        <li class="item grid -columns col is-tablet">
+          <h2 class="title">Widgets  &  Shortcodes</h2>
+          <div class="grid col valign-bottom">
+            <div class="grid -wrap valign-middle halign-center is-tablet">
+              <figure class="grid box-icon">
+                <img src="./images/gear.png" alt="">
+              </figure>
+              <p class="text col is-tablet">Comes with 3 custom widgets and tons of shortcodes to help you create amazing posts.</p>
+            </div>
+          </div>
+        </li>
+        <li class="item grid -columns col is-tablet">
+          <h2 class="title">Filterable  portfolio</h2>
+          <div class="grid col valign-bottom">
+            <div class="grid -wrap valign-middle halign-center is-tablet">
+              <figure class="grid box-icon">
+                <img src="./images/star.png" alt="">
+              </figure>
+              <p class="text col is-tablet">Comes with 3 custom widgets and tons of shortcodes to help you create amazing posts. </p>
+            </div>
+          </div>
+        </li>
+        <li class="item grid -columns col is-tablet">
+          <h2 class="title">Top  Notch  Documentation</h2>
+          <div class="grid col valign-bottom">
+            <div class="grid -wrap valign-middle halign-center is-tablet">
+              <figure class="grid box-icon">
+                <img src="./images/search.png" alt="">
+              </figure>
+              <p class="text col is-tablet">Comes with 3 custom widgets and tons of shortcodes to help you create amazing posts.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="grid col-12">
+        {% include "newsletter/template.njk" %}
+      </div>
+    </div>
+  </div>
+</section>

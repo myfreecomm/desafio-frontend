@@ -1,0 +1,16 @@
+@import '../../scss/deps';
+
+.title {
+  .text,
+  .subtitle { text-align: center }
+
+  .text { font-size: 2.4em }
+
+  .subtitle {
+    @extend %cl-gray;
+    font-size: 1.4em;
+    margin-top: 10px;
+  }
+
+  .btn { margin-top: 25px }
+}

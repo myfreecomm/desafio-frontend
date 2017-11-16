@@ -1,0 +1,9 @@
+<ul class="menu grid halign-center is-tablet {{ menu.type }}">
+  {% for link in menu.links %}
+    <li class="item grid">
+      <a class="link grid valign-middle" href="#">
+        <span class="text">{{ link }}</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

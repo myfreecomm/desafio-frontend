@@ -1,0 +1,26 @@
+<header class="header">
+    <section class="container">
+      <div class="grid halign-center">
+        <figure class="grid is-mobile">
+          <a href="/">
+            <img class="logo" src="./images/logo.png" alt="Web Designer Ninja">
+          </a>
+        </figure>
+
+        <!-- open menu mobile -->
+        <input id="input-open-nav" class="input-open-nav hidden" type="checkbox">
+        <div class="shadow"></div>
+        <label class="open-nav" for="input-open-nav">
+          <div class="bars">
+              <i class="bar"></i>
+          </div>
+        </label>
+        <!-- /open menu mobile -->
+
+        <nav class="nav grid col halign-right">
+          {% set menu = { links: [ 'Videos', 'Forum', 'Purchase Today', 'Demo' ], type: '-header' } %}
+          {% include "menu/template.njk" %}
+        </nav>
+      </div>
+    </section>
+</header>
