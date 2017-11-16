@@ -1,0 +1,38 @@
+.footer {
+	background: $gray1;
+	height: 170px;
+	padding-top: 60px;
+	text-align: center;
+
+	&-nav { 
+		ul {
+			margin: 0 0 25px 0;
+		}		
+		li {
+			color: $gray-text;
+			display: inline-block;
+			font-size: 10.5pt;
+			font-weight: 700;
+			line-height: 16pt;
+			
+			& + li:before {
+				content: "|";
+				color: $blue-text;
+			}
+			a {
+				color: inherit;			
+				padding: 0 3px;	
+
+				&:focus,
+				&:hover,
+				span {
+					color: $blue-text;	
+				}
+			}
+		}
+	}
+	&-copyright {
+		color: $blue-text;
+		font-size: 11.5pt;
+	}
+}

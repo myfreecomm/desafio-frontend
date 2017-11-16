@@ -1,0 +1,21 @@
+{
+	"name": "nexaas-challenge",
+	"version": "1.0.0",
+	"description": "Nexaas Challenge",
+	"author": "Lucas Silva",
+	"devDependencies": {
+		"autoprefixer": "^7.1.6",
+		"babel-core": "^6.26.0",
+		"babel-preset-env": "^1.6.0",
+		"gulp": "^3.9.1",
+		"gulp-babel": "^7.0.0",
+		"gulp-connect": "^5.0.0",
+		"gulp-eslint": "^4.0.0",
+		"gulp-gh-pages": "^0.5.4",
+		"gulp-imagemin": "^3.4.0",
+		"gulp-stylint": "^4.0.0",
+		"gulp-stylus": "^2.6.0",
+		"lost": "^8.2.0",
+		"poststylus": "^1.0.0"
+	}
+}
