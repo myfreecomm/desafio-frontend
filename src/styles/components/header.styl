@@ -7,7 +7,7 @@
 		position: fixed;
 	}
 	+breakpoint(mobile) {
-		height: 100px;
+		height: 120px;
 	}
 	&-links {
 		align-items: center;
@@ -39,15 +39,21 @@
 			}
 		}
 	}
-	&-nav li {
-		color: #fff;
-		display: inline-block;
-		font-size: 12pt;
-    	font-weight: 600;
+	&-nav {
+		ul {
+			text-align: center;
+		}		
+		li {
+			color: #fff;
+			display: inline-block;
+			font-size: 12pt;
+			font-weight: 600;
+			line-height: 16pt;
 
-		& + li:before {
-			content: "|";
-			color: inherit;
+			& + li:before {
+				content: "|";
+				color: inherit;
+			}
 		}
 		a {
 			color: inherit;

@@ -71,9 +71,19 @@
 	&__newsletter {
 		lost-column: 10/12;
 		lost-offset: 1/12;
+
+		+breakpoint(mobile) {
+			lost-column: 1/1;
+			lost-offset: clear-left;
+		}
 	}
 	.email-input {
 		width: calc(100% - 150px);	
+
+		+breakpoint(mobile) {
+			margin-bottom: 20px;
+			width: 100%;
+		}
 	}
 }
 .section3 {
