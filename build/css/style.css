@@ -16,7 +16,8 @@ header {
     position: fixed; }
 
 .content-header {
-  width: 960px;
+  max-width: 960px;
+  width: 100%;
   margin: 0 auto; }
 
 .content-logo {
@@ -34,7 +35,9 @@ nav {
       margin-right: 15px;
       padding-right: 15px; }
       nav ul li:last-child {
-        border-right: none; }
+        border-right: none;
+        margin-right: 0;
+        padding-right: 0; }
       nav ul li a {
         color: #ffffff;
         text-decoration: none;
@@ -74,7 +77,8 @@ nav {
     background-color: #215aa9; }
 
 .theme-features {
-  width: 960px;
+  max-width: 960px;
+  width: 100%;
   margin: 0 auto; }
 
 .content-feature {
@@ -101,7 +105,8 @@ nav {
   clear: both; }
 
 .content-vantagens {
-  width: 960px;
+  max-width: 960px;
+  width: 100%;
   margin: 40px auto; }
 
 .vantagens {
@@ -176,5 +181,63 @@ footer {
   color: #2c5ee6;
   font-size: 16px;
   margin-top: 25px; }
+
+@media screen and (min-width: 320px) and (max-width: 959px) {
+  .main-content img {
+    width: 95%; }
+
+  .order-content img {
+    width: 95%; } }
+@media screen and (min-width: 320px) and (max-width: 820px) {
+  .container-newsletter input[type="text"] {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px; } }
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .content-logo {
+    margin-left: 15px; }
+
+  nav {
+    padding-right: 15px; } }
+@media screen and (max-width: 600px) {
+  .main-content {
+    height: 500px; } }
+@media screen and (max-width: 699px) {
+  .content-logo {
+    display: block;
+    text-align: center; }
+
+  header {
+    height: 107px; }
+
+  nav {
+    float: none;
+    text-align: center; } }
+@media screen and (max-width: 989px) {
+  .content-feature {
+    display: block;
+    float: none;
+    text-align: center; }
+
+  .content-feature-img {
+    display: block;
+    float: none;
+    text-align: center; }
+
+  .vantagens {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 35px; }
+    .vantagens:last-child {
+      margin-right: inherit; }
+    .vantagens h2 {
+      text-align: center; }
+    .vantagens .content-img {
+      margin-right: 20px;
+      margin-left: 20px; } }
+@media screen and (max-width: 534px) {
+  .content-feature-img img {
+    width: 95%; } }
 
 /*# sourceMappingURL=style.css.map */
