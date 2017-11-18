@@ -374,12 +374,20 @@ footer nav ul li a.current {
 }
 
 @media screen and (max-width: 518px) {
+  footer {
+    padding: 35px 0;
+  }
   footer nav ul li {
     margin-bottom: 10px;
+    margin-right: 6px;
+    padding-right: 9px;
   }
 }
 
 @media screen and (max-width: 425px) {
+  .order-content {
+    height: 490px;
+  }
   .order-content img {
     margin-bottom: 35px;
   }
