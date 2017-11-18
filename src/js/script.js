@@ -9,4 +9,8 @@ $(document).ready(function () {
             $('header').removeClass('fixed');
         }
     });
+
+    $('.mobile').click(function(){
+        $('header nav').slideToggle();
+    });
 });

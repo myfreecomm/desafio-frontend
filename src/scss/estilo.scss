@@ -105,6 +105,14 @@ nav {
     }
 }
 
+.mobile {
+    position: relative;
+    top: 12px;
+    font-size: 18px;
+    color: #ffffff;
+    display: none;
+}
+
 .theme-features {
     max-width: 960px;
     width: 100%;
@@ -283,6 +291,43 @@ footer {
     }
 }
 
+@media screen and (max-width: 746px) {
+    .main-content {
+        height: 555px;
+
+        h1 {
+            width: 86%;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+
+        p {
+            width: 86%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            margin-top: 10px;
+        }
+    }
+
+    .order-content {
+        h2 {
+            width: 86%;
+            margin: 0 auto;
+        }
+
+        p {
+            width: 86%;
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 45px;
+        }
+
+        img {
+            margin-bottom: 65px;
+        }
+    }
+}
+
 @media screen and (min-width: 700px) and (max-width: 1000px) {
     .content-logo {
         margin-left: 15px;   
@@ -354,4 +399,77 @@ footer {
             width: 95%;
         }
     }
+}
+
+@media screen and (max-width: 518px) {
+    
+    footer {
+        nav {
+            ul {
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .order-content {
+        img {
+            margin-bottom: 35px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .mobile {
+        display: block;
+    }
+    
+    header {
+        position: relative;
+        text-align: center;
+
+        nav {
+            
+                    position: relative;
+                    top: 24px;
+                    display: none;
+            
+                    &::before {
+                        content: "";
+                        width: 0;
+                        height: 0;
+                        border-left: 12px solid transparent;
+                        border-right: 12px solid transparent;
+                        border-bottom: 12px solid #215aa9;
+                        position: relative;
+                        top: -10px;
+                    }
+            
+                    ul {
+                        width: 86%;
+                        margin: 0 auto;
+                        border: 1px solid gray;
+            
+                        li {
+                            display: block;
+                            border-right: none;
+                            border-bottom: 1px solid #ffffff;
+                            margin-right: 0;
+                            padding-right: 0;
+                            background-color: #215aa9;
+                            padding: 8px;
+            
+                            &:last-child {
+                                border-bottom: 0;
+                            }
+                        }
+                    }
+                }
+    }
+
+    
 }
