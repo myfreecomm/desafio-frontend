@@ -9,6 +9,7 @@ module.exports = function(grunt) {
             },
             js: {
                 files: "src/js/*.js",
+                tasks: "uglify"
             },
             sass: {
                 files: "src/scss/*.scss",
@@ -26,11 +27,19 @@ module.exports = function(grunt) {
                 }
             }
         },
+
+        uglify: {
+            dist: {
+                files: {
+                    "build/js/script.min.js": "src/js/script.js"
+                }
+            }
+        }
     });
 
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-contrib-sass");
     grunt.loadNpmTasks("grunt-contrib-uglify");
 
-    grunt.registerTask("teste", ["watch"]);
+    grunt.registerTask("teste", ["watch", "uglify"]);
 };
