@@ -1,0 +1,47 @@
+footer {
+	width: 100%;
+	background: $azul-3;
+	padding: 50px 0;
+
+	nav {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 30px;
+
+		ul {
+			list-style: none;
+			display: flex;
+			li {
+				font-size: 16px;
+				font-weight: bold;
+				a {
+					color: $black;
+					text-decoration: none;
+					padding: 10px 15px 10px 15px;
+					-webkit-transition: all 0.5s; /* Safari */
+    				transition: all 0.5s;
+					&:hover {
+						color: $azul-2;
+					}
+				}
+
+				&:last-child {
+					&:after {
+						display: none;
+					}
+				}
+
+				&:after {
+					content: '|';
+					color: $black;
+				}
+			}
+		}
+	}
+
+	span {
+		display: flex;
+		justify-content: center;
+		color: $azul-1;
+	}
+}

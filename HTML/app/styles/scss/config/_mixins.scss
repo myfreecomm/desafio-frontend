@@ -1,0 +1,34 @@
+//MIXIN DAS FONTS DO PROJETO
+
+//MONTSERRAT LIGHT
+@mixin fontMontserraLight() {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+//MONTSERRAT REGULAR
+@mixin fontMontserraRegular() {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+//MONTSERRAT BOLD
+@mixin fontMontserraBold() {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+//MONTSERRAT EXTRA BOLD
+@mixin fontMontserratExtraBold() {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+//MONTSERRAT BLACK
+@mixin fontMontserratBlack() {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}

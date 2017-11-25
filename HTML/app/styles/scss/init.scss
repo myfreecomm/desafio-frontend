@@ -1,0 +1,19 @@
+//misc settings
+@import 'config/_settings';
+@import 'config/_mixins';
+@import 'config/_variables';
+@import 'config/_fonts';
+@import 'config/_fontsize';
+
+//frameworks
+@import 'custom/_font-awesome';
+
+//global things
+@import 'general/_reset';
+@import 'layout/_header';
+@import 'layout/_footer';
+@import 'layout/_elementos';
+@import 'layout/_main';
+
+//PAGES
+@import 'pages/_home';
