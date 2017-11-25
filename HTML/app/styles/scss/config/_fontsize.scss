@@ -1,0 +1,27 @@
+// Max breakpoint
+$max-breakpoint: 1440;
+
+// This could be one of your media query breakpoint variables
+$wide-screen: "(min-width: #{$max-breakpoint}px)"; 
+
+// Function
+@function get-vw($target) {
+  // 1 vw is equal to 1% of the viewport width
+  $vw-context: ($max-breakpoint * .01) * 1px; // 1% viewport width
+  @return ($target/$vw-context) * 1vw;
+}
+
+// Mixin
+@mixin vw($size) {
+  font-size: get-vw($size);
+  // Prevent font-size from getting too big
+  @media #{$wide-screen} {
+    font-size: $size;
+  }
+}
+
+// If the width of the viewport is 1025px or wider, the font size will remain at 72px. Otherwise, the value will adjust as 7.2vw.
+.headline {
+  font-size: 4.5em; // Fallback
+  @include vw(72px);
+}
