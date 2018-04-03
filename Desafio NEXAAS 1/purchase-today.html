@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/purchase.css">
+
+
+    <title>Web Designer NINJA</title>
+
+  </head>
+
+  <body>
+
+      <header>
+
+          <div class="center-top">
+
+           <img src="img\Web-Designer-NINJA.png" alt="Web Designer Ninja">
+
+            <nav>
+              <a href="#">Video</a>
+              <a href="#">Forum</a>
+              <a href="#">Purchase Today</a>
+              <a href="#">Demo</a>
+            </nav>
+
+          </div>
+
+      </header>
+
+      <div class="container">
+
+        <section class="intro">
+
+          <img src="img/header.png" alt="Header">
+
+          <h2> <span class="Spotlight">Spotlight</span>, a Wordpress Theme for Creatives, Agencies & Small Businesses </h2>
+
+          <p>Creativio is the perfect theme for the creative individual, agencies, freelancers, or small businesses. It comes packed full of goodies and comes with a world class design.</p>
+
+          <button><a href="#">View Demo</a></button>
+
+        </section>
+
+        <section class="theme-features">
+          <div class="features">
+          <h2>Theme Features</h2>
+            <ul>
+              <li>Filterable Portfolio with Pagination</li>
+              <li>3 Custom Widgets (Twitter, Flickr, Video)</li>
+              <li>Post Format Support (Images, Galleries, Standard, Audio, Video)</li>
+              <li>Theme Options Panel</li>
+              <li>Powerful Slider</li>
+              <li>Like Counter for Portfolio & Blog Item</li>
+              <li>Wordpress 3.0+ Ready (Menus & Featured Images)</li>
+              <li>Page Templates (Archives, Contact Form, Quote Form, Faq)</li>
+              <li>Shortcode Generator (Columns, Buttons, Toggles, Tabs, Alerts, Heading)</li>
+              <li>Full Localisation Support (contains .po / .mo files)</li>
+              <li>HTML 5 Valid Code</li>
+              <li>Support Forum</li>
+              <li>Layered PSDs for Customisation</li>
+              <li>The Best Documentation in the Industry</li>
+            </ul>
+          </div>
+          <div class="imagem">
+            <img src="img/img1.png" alt="Features">
+          </div>
+        </section>
+
+        <section class="features">
+
+          <article class="widgets">
+            <h2>Widgets & Shortcodes</h2>
+            <img src="img/gadget.png">
+            <p>Comes with 3 custom widgets and<br>
+              tons of shortcodes to help you<br>
+              create amazing posts.
+            </p>
+          </article>
+
+          <article class="Portfolio">
+            <h2>Filterable portfolio</h2>
+            <img src="img\star.png">
+            <p>Comes with 3 custom widgets and<br>
+              tons of shortcodes to help you<br>
+              create amazing posts.
+            </p>
+          </article>
+
+            <article class="Documentation">
+              <h2>Top Notch Documentation</h2>
+              <img src="img\magnify-glass.png">
+              <p>Comes with 3 custom widgets and<br>
+                tons of shortcodes to help you<br>
+                create amazing posts.
+              </p>
+          </article>
+        </section>
+
+        <section class="signmeup">
+            <form action="#">
+              <input type="email"
+                     placeholder="Enter your email address to get free theme updates ..."
+                     name="email">
+              <input type="submit" value="Sign Me Up">
+            </form>
+        </section>
+
+        <section class="purchase">
+
+          <img src="img\telas.png" alt="samples">
+
+          <h2>What are you waiting for? <span class="Spotlight">order Sportlight</span> today and blow your clients minds!</h2>
+
+          <p>Jumpstart your next web project with this professional and flexible WordPress theme. Creativio will blow your client mind with the product you have made for them. </p>
+
+          <button><a href="#">Purchase | $40</a></button>
+
+        </section>
+
+      </div>
+
+      <footer>
+        <div class="center-bottom">
+
+          <nav>
+            <a href="#">Documentation</a>
+            <a href="#">Video</a>
+            <a href="#">Forum</a>
+            <a href="#"><span class="Spotlight">Purchase Today</span></a>
+            <a href="#">Demo</a>
+          </nav>
+
+          <p>Copyright 2014. All Rights Reserved</p>
+
+        </div>
+      </footer>
+
+      <script type="text/javascript">
+        var header = document.getElementsByTagName("header")[0];
+        var last_known_scroll_position = 0;
+        var ticking = false;
+
+        function fixHeader() {
+          header.className = "fixed";
+        }
+
+        function unfixHeader() {
+          header.className = "";
+        }
+
+        function verifyFix(scrollPosition) {
+          if (scrollPosition > 500) fixHeader();
+          else unfixHeader();
+        }
+
+        window.addEventListener('scroll', function(e) {
+          scrollPosition = window.scrollY;
+
+          if (!ticking) {
+            window.requestAnimationFrame(function() {
+              verifyFix(scrollPosition);
+              ticking = false;
+            });
+          }
+
+          ticking = true;
+        });
+      </script>
+
+  </body>
+
+</html>
