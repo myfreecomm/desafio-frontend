@@ -1,24 +1,4 @@
-# Teste para candidatos à vagas de Designer
-
-A idéia deste desafio é nos permitir avaliar melhor as habilidades de candidatos à vagas de Designer, de vários níveis.
-
-Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quiser, porém normalmente você não deve precisar de mais do que algumas horas.
-
-## Instruções de entrega do desafio
-
-Primeiro, faça um fork deste projeto para sua conta no Github (crie uma se você não possuir). Em seguida, implemente o projeto tal qual descrito abaixo, em seu próprio fork. Por fim, empurre todas as suas alterações para o seu fork no Github e envie um pull request para este repositório original.
-
-Se você já entrou em contato com alguém da Myfreecomm sobre uma vaga, avise também essa pessoa por email, incluindo no email o seu usuário no Github.
-
-### Instruções alternativas de entrega do desafio
-
-(caso você não queira que sua submissão seja pública e/ou não saiba usar o Git)
-
-Faça um clone deste repositório. Em seguida, implemente o projeto tal qual descrito abaixo, em seu clone local. Por fim, envie via email um arquivo patch para seu contato na Myfreecomm.
-
-Caso você não saiba gerar um patch, não tem problema. Comprima o projeto todo em um arquivo .zip e mande por email para seu contato na Myfreecomm.
-
-Caso não saiba nem usar o Git para clonar o repositório e iniciar o projeto, também não tem problema. Clique no botão "Download ZIP" na barra lateral direita nesta página, baixe o .zip do projeto, modifique-o, comprima novamente em um novo arquivo .zip e mande por email para seu contato na Myfreecomm.
+# Nexaas Frontend challenge
 
 ## Descrição do projeto
 
@@ -38,3 +18,41 @@ Coisa simples, não?
 ### Avaliação
 
 Seu projeto será avaliado de acordo com a qualidade do seu código e sua organização com os arquivos utilizados, além do conhecimento e bom uso da semântica HTML e CSS.
+
+## Instalação
+
+Unzip/Git-Clone o conteúdo para uma pasta local. Acesse a pasta pelo terminal (cmd, Powershell, Terminal, etc.) e rode o comando
+
+```
+npm install
+```
+
+Para rodar o servidor de desenvolvimento local (após baixar as dependências através do npm install)
+
+```
+npm run server
+```
+
+Para gerar o conteúdo com CSS e JS compilados e minificados na pasta '/dist'
+
+```
+npm run build
+```
+
+## Informações
+
+Para facilitar a visualização do challenge, enviei a pasta '/dist' junto com o restante do projeto, basta abrir o 'index.html' dentro dela para visualizar o projeto finalizado
+
+Dentro da pasta '/dist' está o arquivo com as indicações (opinativas) de melhorias
+
+Os arquivos fonte de CSS e JS encontram-se na pasta '/src/scss' e '/src/js' respectivamente, com exceção da base do Foundation que já se encontra minificado
+
+Foi utilizado o [Foundation](https://foundation.zurb.com/) para o grid responsivo
+
+## Autor
+
+* [Guilherme Oliveira](https://github.com/guibfo)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details

@@ -1,0 +1,24 @@
+/* Small and Medium */
+@media screen and (max-width: 63.9375em) {
+  .main-menu {
+    background: #215aa9;
+    border-top: 1px solid #09336c;
+    position: absolute;
+    right: -100%;
+    top: 100%;
+    transition: right .5s ease-in-out;
+    width: 100%;
+    &.active {
+      right: 0;
+    }
+  }
+  .small-spacer {
+    margin-bottom: 3rem;
+    &--minor {
+      margin-bottom: 1.5rem;
+    }
+  }
+  .max-width h2 {
+    text-align: center;
+  }
+}
