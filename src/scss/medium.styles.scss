@@ -1,0 +1,25 @@
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .listing__item {
+    float: left;
+    margin-bottom: .5rem;
+    text-align: left;
+    width: 50%;
+    &:nth-child(odd) {
+      clear: left;
+    }
+  }
+  .main-menu .menu {
+    justify-content: center;
+  }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+  a.menu__link {
+    border-right: 2px solid #fff;
+    &--alt {
+      border-color: #2f62f2;
+    }
+  }
+}

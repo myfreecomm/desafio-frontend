@@ -1,0 +1,17 @@
+/* Large and up */
+@media screen and (min-width: 64em) {
+  .title-bar {
+    display: none;
+  }
+  .large-spacer {
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+  }
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+  .main-menu {
+    float: right;
+  }
+}

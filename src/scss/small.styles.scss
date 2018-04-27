@@ -1,0 +1,29 @@
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .small-spacer {
+    margin-bottom: 3rem;
+  }
+  .main-menu {
+    .menu {
+      flex-direction: column;
+    }
+    .menu__link {
+      border: none;
+    }
+    .list-item {
+      border-bottom: 1px solid #09336c;
+      border-top: 1px solid #1862c6;
+
+    }
+  }
+  .secondary {
+    h2 {
+      text-align: center;
+    }
+    .max-width {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 320px;
+    }
+  }
+}
