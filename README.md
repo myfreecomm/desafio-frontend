@@ -21,6 +21,8 @@ Seu projeto será avaliado de acordo com a qualidade do seu código e sua organi
 
 ## Instalação
 
+Para rodar o servidor de desenvolvimento local e instalar as dependências é necessario ter o [Node.Js](https://nodejs.org/en/) e [NPM](https://www.npmjs.com/) instalados
+
 Unzip/Git-Clone o conteúdo para uma pasta local. Acesse a pasta pelo terminal (cmd, Powershell, Terminal, etc.) e rode o comando
 
 ```
