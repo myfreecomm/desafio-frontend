@@ -1,4 +1,17 @@
-# Teste para candidatos à vagas de Designer
+# Acessando o resultado do tese
+
+Basta ir no diretório **desafio/public** e **abrir o index.html**
+
+**O que melhorar:**
+
+Acredito que o layout poderia ter sido feito em uma ferramenta mais apropriada para UI, *Sketch* por exemplo, o desenvolvimento seria mais rápido.
+
+É essencial demonstrar como se comportam os elementos ao interagir com eles: links, botões, inputs e etc.
+
+As fontes poderiam ser um pouco maiores, alguém com algum tipo de deficiência visual teria problemas em ler os textos.
+
+
+## Teste para candidatos à vagas de Designer
 
 A idéia deste desafio é nos permitir avaliar melhor as habilidades de candidatos à vagas de Designer, de vários níveis.
 
@@ -27,7 +40,7 @@ A partir do template em PSD, desenvolva:
 - Mostre suas habilidades no Photoshop e crie os PNG's das imagens que irá utilizar do template.
 - Um código semântico, bem organizado e de fácil entendimento.
 - Foque suas habilidades em um CSS simples, mas eficaz.
-- Se você "manja dos paranauê", utilize HTML5 e CSS3 para fazer a diferença. 
+- Se você "manja dos paranauê", utilize HTML5 e CSS3 para fazer a diferença.
 - Usar JS para que o menu principal fique fixo a partir da DIV que contém o título "Theme Features" será um bom diferencial.
 - Não se preocupe com qual fonte utilizar, por via das dúvidas, utilize Arial e seja feliz =D
 

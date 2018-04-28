@@ -1,0 +1,159 @@
+@import './../colors';
+
+.features {
+  padding: 40px 0;
+}
+
+.features__area {
+  justify-content: space-between;
+  margin-bottom: 40px;
+  overflow: hidden;
+
+  @media (min-width: 500px) {
+    display: flex;
+    margin-right: -20px;
+  }
+}
+
+.features__list {
+  li:not(:last-of-type) {
+    margin-bottom: 2px;
+  }
+
+  @media (min-width: 500px) {
+    min-width: 75%;
+  }
+
+  @media (min-width: 960px) {
+    min-width: unset;
+  }
+}
+
+.features__img {
+  min-width: 518px;
+  display: none;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: 500px) {
+    display: block;
+    transform: translateX(-41px);
+  }
+
+  @media (min-width: 730px) {
+    display: block;
+    transform: translateX(-161px);
+  }
+
+  @media (min-width: 960px) {
+    display: block;
+    transform: unset;
+  }
+}
+
+.features__cols {
+  margin: 0 -12px;
+
+  @media (min-width: 960px) {
+    display: flex;
+  }
+}
+
+.features__singleCol {
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+  padding: 0 12px;
+
+  .title {
+    font-size: 23px;
+  }
+
+  @media (min-width: 960px) {
+    width: 33.33%;
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+.features__singleContent {
+  margin-top: 25px;
+
+  p {
+    max-width: 250px;
+    margin: 0 auto;
+    line-height: 18px;
+  }
+
+  @media (min-width: 960px) {
+    display: flex;
+
+    p {
+      max-width: unset;
+      padding-left: 45px;
+    }
+  }
+}
+
+.features__icon {
+  width: 52px;
+  height: auto;
+  display: inline-block;
+
+  svg {
+    display: block;
+    fill: @blue;
+  }
+
+  @media (min-width: 960px) {
+    width: unset;
+    min-width: 52px;
+  }
+}
+
+.signup {
+  width: 100%;
+  max-width: 820px;
+  margin: 70px auto 0;
+}
+
+.signup__form {
+  width: 100%;
+
+  @media (min-width: 545px) {
+    display: flex;
+  }
+}
+
+.signup__input {
+  width: 100%;
+  height: 49px;
+  border: 1px solid #f5f5f5;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 2px fade(#000000, 30%);
+  font-size: 14px;
+  padding: 0 16px;
+  transition: background-color 0.25s ease-in-out;
+
+  &:focus {
+    background: lighten(@lightGray, 50%);
+  }
+}
+
+.signup__button {
+  width: 100%;
+  height: 49px;
+  border: none;
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+
+  @media (min-width: 545px) {
+    width: unset;
+    min-width: 130px;
+    margin-left: 12px;
+  }
+}

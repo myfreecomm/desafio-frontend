@@ -1,0 +1,42 @@
+@import './../colors';
+
+.hero {
+  background: url('./../../images/hero-bg.jpg');
+  text-align: center;
+  margin-top: 70px;
+  padding: 40px 0 25px;
+
+  .subtitle {
+    margin: -8px 0 25px;
+
+    @media (min-width: 600px) {
+      padding: 0 100px;
+    }
+  }
+}
+
+.hero__img {
+  max-width: 932px;
+  margin: 0px -20px 40px;
+  overflow: hidden;
+
+  img {
+    width: 150%;
+    height: auto;
+    transform: translateX(-16.5%);
+  }
+
+  @media (min-width: 600px) {
+    margin: 0 auto 40px;
+
+    img {
+      width: 100%;
+      transform: unset;
+    }
+  }
+}
+
+.hero--last {
+  margin-top: 0;
+  padding-bottom: 70px;
+}
