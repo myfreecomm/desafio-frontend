@@ -1,0 +1,199 @@
+$font-titulo: 25px;
+$cor-span:2f62f2;
+
+.header{
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 15px;
+}
+#navegacao{
+    background-color: 215aa9;
+    padding: 15px;
+}
+
+.nav-item{
+    a{
+        color: white;
+    }
+}
+
+.img-header {
+    img{
+        padding-top:20px;
+    }
+}
+
+
+.titulo-header{
+    
+    h1 {
+        font-size: $font-titulo;
+        text-align: center;
+        padding-top: 30px;
+        letter-spacing: 2px;
+        
+        span{
+            color: $cor-span;
+        }
+    }
+    
+    p{
+        padding-top: 10px;
+        text-align: center;
+          letter-spacing: 2px;
+    }
+    
+ 
+    
+}
+
+
+.feature-sessao{
+    border-bottom: 1px solid #e4e4e4;
+      padding-bottom: 15px;
+   
+}
+
+
+.feature{
+    padding-top: 40px;
+}
+
+
+.feature-texto{
+    
+    h1{
+        text-align:center;
+         letter-spacing: 2px;
+           font-size: $font-titulo;
+    }
+    
+    p{
+        text-align:justify;
+        
+    }
+   
+    
+    
+}
+
+.feature-conteudo{
+    padding-right: 80px;
+   
+}
+
+    .feature-midia{
+    display: -webkit-box!important;
+}
+
+
+
+.feature-img {
+    img{
+        width: 100%;
+    }
+}
+
+
+.textos-feature{
+    
+    h2{
+        font-size:20px;
+       
+    }
+ 
+    
+    p{
+        text-align: justify;
+     
+    }
+}
+
+
+
+
+
+.icone-feature{
+  margin-right: 1rem!important;
+
+    
+    
+
+    
+}
+
+
+.formulario{
+  
+    padding-top: 15px;
+}
+
+.form-control{
+    display: inline-block;
+    width: 80%;
+    padding: 10px;
+}
+
+
+.cases{
+    img{
+        padding-top: 30px;
+    }
+}
+
+
+
+.footer{
+    
+    background-color: e5eaf1;
+    padding: 50px;
+}
+
+
+.documentation{
+     padding-right: 5px;
+    
+   
+    
+    a{
+          padding-right: 5px;
+        border-right: 1px solid #2f62f2;
+        color: black;
+        
+    }
+    
+}
+
+.demo{
+    a{
+      color: black;  
+    }
+}
+
+.copright{
+    padding-top: 10px;
+    p{
+        color: #2f62f2;
+        text-align: center;
+    }
+}
+
+
+.post-melhorias{
+    
+    h1{
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+
+}
