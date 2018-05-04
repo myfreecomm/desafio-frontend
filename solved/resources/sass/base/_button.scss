@@ -1,0 +1,11 @@
+.ro-button{
+   padding: $button-padding-top-bottom + px $button-padding-left-right + px;
+   border: none;
+   border-radius: $border-radius;
+   background: $color-blue-light;
+   color: #fff;
+   display: inline-block;
+   &:hover{
+      background: lighten($color-blue-light, 5);
+   }
+}

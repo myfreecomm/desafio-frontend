@@ -1,0 +1,12 @@
+
+.ro-form{
+   .ro-form-input{
+      border-radius: $border-radius;
+      border: 1px solid $color-gray;
+      max-width: 100%;
+      width: 700px;
+      &.ro-form-input-large{
+         padding: $input-large-padding;
+      }  
+   }
+}

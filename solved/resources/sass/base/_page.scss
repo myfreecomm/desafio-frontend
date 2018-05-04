@@ -1,0 +1,14 @@
+
+
+.ro-page-row{
+   width: $width-row * 1%;
+   display: block;
+   margin: 0 auto;
+}
+
+/* Phone landscape and bigger */
+@media (max-width: $breakpoint-small) {
+   .ro-page-row{
+      width: ($width-row + 10) * 1%;
+   }
+}

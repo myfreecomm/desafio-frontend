@@ -1,0 +1,51 @@
+.ro-text-small {
+   font-size: $text-small-font-size;
+   line-height: $text-small-line-height;
+}
+
+.ro-text-large {
+   font-size: $text-large-font-size;
+   line-height: $text-large-line-height;
+   font-weight: $text-large-font-weight;
+}
+
+.ro-text-bold { font-weight: bold; }
+
+.ro-text-muted { color: $text-muted-color !important; }
+.ro-text-primary { color: $text-primary-color !important; }
+.ro-text-success { color: $text-success-color !important; }
+.ro-text-warning { color: $text-warning-color !important; }
+.ro-text-danger { color: $text-danger-color !important; }
+.ro-text-contrast { color: $text-contrast-color !important; }
+
+.ro-text-left { text-align: left !important; }
+.ro-text-right { text-align: right !important; }
+.ro-text-center { text-align: center !important; }
+.ro-text-justify { text-align: justify !important; }
+
+.ro-text-top { vertical-align: top !important; }
+.ro-text-middle { vertical-align: middle !important; }
+.ro-text-bottom { vertical-align: bottom !important; }
+
+.ro-text-nowrap { white-space: nowrap; }
+
+.ro-text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ro-text-break {
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+.ro-text-capitalize { text-transform: capitalize !important; }
+.ro-text-lowercase { text-transform: lowercase !important; }
+.ro-text-uppercase { text-transform: uppercase !important; }
+
+.ro-text-blue{ color: $color-blue-light !important; }
+.ro-text-font{ color: $color-font !important; }

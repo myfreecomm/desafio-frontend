@@ -1,0 +1,58 @@
+
+
+// styles sections
+
+.ro-header{
+   height: $height-header + px;
+   width: 100%;
+   background: $color-blue;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+
+   &.ro-header-fixed{
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      right: 0;
+      
+   }
+
+   a.ro-header-logo{
+      img{
+
+      }
+   }
+
+   ul.ro-header-navigation{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: inline-flex;
+      li{
+         display: inline-flex;
+         a{
+            display: inline-block;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 15px;
+         }
+      }
+   }
+}
+
+@media (max-width: $breakpoint-medium) {
+   .ro-header{
+      text-align: center;
+      ul.ro-header-navigation{
+         display: none;
+      }
+   }
+}
+
+.ro-footer{
+   background: $color-sky-light;
+   padding: 4rem 2rem;
+}

@@ -1,0 +1,23 @@
+
+
+// variables
+@import "_variables.scss"; 
+
+
+// normalizing for good practices
+@import "vendor/_normalize.scss";
+@import "vendor/_animate.scss";
+
+@import "base/_grid.scss";
+@import "base/_text.scss";
+@import "base/_base.scss"; 
+@import "base/_page.scss"; 
+@import "base/_button.scss"; 
+@import "base/_form.scss"; 
+
+@import "helper/_ro.scss";
+
+
+//pages
+
+@import "pages/_landing.scss";

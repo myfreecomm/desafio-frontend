@@ -1,0 +1,71 @@
+
+$font-size:                                     14 !default;
+$border-radius:                                 5px !default;
+
+// colors
+
+$color-blue:                                  #215aa9 !default;
+$color-blue-light:                            #2f62f2 !default;
+$color-sky-light:                             #e5eaf1 !default;
+$color-font:                                  #3a3a3a !default;
+$color-gray:                                  #dddddd !default;
+
+
+// measurements
+
+$height-header:                                 70 !default;
+$width-row:                                     80 !default;
+
+
+// grid
+
+$breakpoint-small:                               480px !default;
+$breakpoint-medium:                              768px !default;
+$breakpoint-large:                               960px !default;
+$breakpoint-xlarge:                              1220px !default;
+$breakpoint-mini-max:                            ($breakpoint-small - 1) !default;
+$breakpoint-small-max:                           ($breakpoint-medium - 1) !default;
+$breakpoint-medium-max:                          ($breakpoint-large - 1) !default;
+$breakpoint-large-max:                           ($breakpoint-xlarge - 1);
+
+$grid-gutter-horizontal:                         25px !default;
+$grid-gutter-vertical:                           25px !default;
+
+$grid-gutter-large-horizontal:                   35px !default;
+$grid-gutter-large-vertical:                     35px !default;
+
+$grid-gutter-xlarge-horizontal:                  50px !default;
+$grid-gutter-xlarge-vertical:                    50px !default;
+
+$grid-gutter-small-horizontal:                   10px !default;
+$grid-gutter-small-vertical:                     10px !default;
+
+$grid-divider-border:                            #ddd !default;
+$grid-divider-border-width:                      1px !default;
+
+
+
+// text
+
+$text-small-font-size:                           11px !default;
+$text-small-line-height:                         16px !default;
+$text-large-font-size:                           18px !default;
+$text-large-line-height:                         24px !default;
+$text-large-font-weight:                         normal !default;
+
+$text-muted-color:                               #999 !default;
+$text-primary-color:                             #2d7091 !default;
+$text-success-color:                             #659f13 !default;
+$text-warning-color:                             #e28327 !default;
+$text-danger-color:                              #d85030 !default;
+$text-contrast-color:                            #fff !default;
+
+// button
+
+$button-padding-top-bottom:                         15 !default;
+$button-padding-left-right:                         30 !default;
+
+
+// form
+
+$input-large-padding:                               14px 20px !default;          

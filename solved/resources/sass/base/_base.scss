@@ -1,0 +1,38 @@
+
+
+html, body{
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   color: $color-font;
+}
+
+p{
+   margin: 0;
+   font-size: $font-size + px;
+}
+
+h1,h2,h3,h4,h5{
+   margin: 0 0 .5rem;
+}
+
+img{
+   max-width: 100%;
+}
+
+
+a{
+   text-decoration: none;
+   color: $color-blue-light;
+}
+
+*{
+   box-sizing: border-box;
+   outline: none;
+}
+
+
+.ro-background{
+   &.ro-background-1{
+      background: url('../img/background.png');
+      background-repeat: repeat-x;
+   }
+}
