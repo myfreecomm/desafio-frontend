@@ -1,0 +1,24 @@
+.page-section__body
+  max-width: 1200px
+  margin: 0 auto
+  padding: $size-xl $size-huge
+
+
+.page-section__action
+  +flexbox
+  +flex-direction(column)
+  +align-items(center)
+
+
+  .page-section-action__title, .page-section-action__text
+    text-align: center
+
+
+  .page-section-action__text
+    max-width: 800px
+    margin-bottom: $size-md
+
+
+.page-section--has-pattern-bg
+  background-image: url('../img/header/header-bg.png')
+  background-repeat: repeat

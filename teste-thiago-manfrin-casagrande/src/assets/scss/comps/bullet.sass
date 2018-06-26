@@ -1,0 +1,44 @@
+.bullet
+  width: 320px
+  margin-right: $size-sm
+  +flexbox
+  +flex-direction(column)
+
+
+  .bullet__header
+    margin-bottom: $size-base
+
+
+  .bullet__body
+    +flexbox
+    +align-items(center)
+
+
+    .bullet__icon
+      flex: 0 0 80px
+      width: 80px
+      height: 80px
+      +flexbox
+      +justify-content(center)
+      +align-items(center)
+      margin-right: $size-base
+
+
+      .bullet__icon--engine,
+      .bullet__icon--star,
+      .bullet__icon--search
+        width: 55px
+        height: 55px
+        background-repeat: no-repeat
+
+
+      .bullet__icon--engine
+        background-image: url('../img/features/engine.svg')
+
+
+      .bullet__icon--star
+        background-image: url('../img/features/star.svg')
+
+
+      .bullet__icon--search
+        background-image: url('../img/features/search.svg')

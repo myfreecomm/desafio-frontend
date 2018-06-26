@@ -1,0 +1,24 @@
+$display-phone: 320px
+$display-tablet: 640px
+$display-desktop: 960px
+$display-desktop-hd: 1200px
+
+
+@mixin phone
+  @media (min-width: #{$display-phone})
+    @content
+
+
+@mixin tablet
+  @media (min-width: #{$display-tablet})
+    @content
+
+
+@mixin desktop
+  @media (min-width: #{$display-desktop})
+    @content
+
+
+@mixin desktop-hd
+  @media (min-width: #{$display-desktop-hd})
+    @content

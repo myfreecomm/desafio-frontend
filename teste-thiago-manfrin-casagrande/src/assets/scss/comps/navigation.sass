@@ -1,0 +1,33 @@
+.navigation__list
+  +flexbox
+  +align-items(center)
+
+
+.navigation-list__item
+  margin-right: $size-base
+  +flexbox
+  opacity: .8
+  transition: all 100ms ease-in-out
+
+  &:hover
+    opacity: 1
+
+  &::after
+    content: "|"
+    margin-left: $size-xs
+
+  &:last-of-type
+    margin-right: 0
+
+    &::after
+      content: ""
+      margin-left: 0
+
+
+.navigation__list--centered
+  +justify-content(center)
+
+
+.item--primary
+  color: $color-primary
+  font-weight: 700
