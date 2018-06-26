@@ -1,0 +1,121 @@
+.hero
+  width: 100%
+  height: auto
+  margin: 0 auto
+  padding: $size-huge
+  background-image: url('../img/header/header-bg.png')
+  background-repeat: repeat
+  border-bottom: 1px solid $color-gray-2
+
+
+  .hero__composition
+    width: 100%
+    max-width: 1200px
+    height: 400px
+    margin: 0 auto
+    position: relative
+
+
+    .hero-comp__iPad,
+    .hero-comp__iphone-horizontal,
+    .hero-comp__iphone-vertical,
+    .hero-comp__iMac,
+    .hero-comp__green-objects
+      position: absolute
+      background-repeat: no-repeat
+
+
+    .hero-comp__iPad
+      width: 220px
+      height: 280px
+      bottom: 0
+      left: 100px
+      z-index: 5
+      opacity: 0
+      background-image: url('../img/header/iPad.svg')
+      animation: slideLeft 2000ms forwards
+
+
+    .hero-comp__iphone-horizontal
+      width: 180px
+      height: 95px
+      right: 200px
+      bottom: 0
+      z-index: 3
+      opacity: 0
+      background-image: url('../img/header/iphone-horizontal.svg')
+      animation: slideRightHorizontal 2000ms forwards
+      animation-delay: 100ms
+
+
+    .hero-comp__iphone-vertical
+      width: 90px
+      height: 180px
+      right: 140px
+      bottom: 0
+      z-index: 2
+      opacity: 0
+      background-image: url('../img/header/iphone-vertical.svg')
+      animation: slideRight 2000ms forwards
+
+
+    .hero-comp__iMac
+      width: 468px
+      height: 400px
+      opacity: 0
+      left: calc(50% - 234px)
+      z-index: 1
+      background-image: url('../img/header/iMac.svg')
+      animation: fadeIn 2000ms forwards
+
+
+    .hero-comp__green-objects
+      width: 934px
+      height: 300px
+      top: 20px
+      right: 0
+      bottom: 0
+      left: calc(50% - 467px)
+      z-index: 0
+      opacity: 0
+      background-image: url('../img/header/green-objects.svg')
+      animation: fadeIn 2000ms forwards
+      animation-delay: 1000ms
+
+
+@keyframes slideLeft
+  0%
+    opacity: 0
+    left: 0
+
+  100%
+    opacity: 1
+    left: 100px
+
+
+@keyframes slideRight
+  0%
+    opacity: 0
+    right: 0
+
+  100%
+    opacity: 1
+    right: 140px
+
+
+@keyframes slideRightHorizontal
+  0%
+    opacity: 0
+    right: 0
+
+  100%
+    opacity: 1
+    right: 200px
+
+
+@keyframes fadeIn
+  0%
+    opacity: 0
+
+  100%
+    opacity: 1

@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,700,700i');
+
+$font-family: 'Roboto', sans-serif;
+$font-weight-light: 300;
+$font-weight-bold: 700;
+
+
+// Classes
+.text--primary {
+  color: $color-primary;
+}
