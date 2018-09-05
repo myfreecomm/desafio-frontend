@@ -24,7 +24,7 @@ Caso não saiba nem usar o Git para clonar o repositório e iniciar o projeto, t
 ## Descrição do projeto
 
 Nosso desafio consiste em implementar uma aplicação client-side que consulte a [API](https://github.com/myfreecomm/desafio-frontend-api) e retorne os dados para serem mostrados no painel. 
-O usuário pode ser capaz de realizar uma busca consumindo os dados da API como mostrado nos layouts fornecidos.
+O usuário pode ser capaz de realizar uma busca consumindo os dados da API como mostrado nos layouts fornecidos. A fonte utilizado no projeto é a Roboto, que pode ser facilmente adicionada atravéz do site [Google Fonts](https://fonts.google.com/specimen/Roboto)
 
 **Os layouts se encontram na pasta *layouts* desse repositório.**
 
@@ -37,6 +37,11 @@ OBS.: Esta aplicação deve funcionar nos navegadores mais recentes do mercado.
 - Faça com que sua página tenha uma ótima experiência para o usuário, independente do dispositivo que ele esteja usando.
 
 - Utilizei um código limpo e bem organizado, e de preferência, utilize alguma arquitetura modular para organizar seus arquivos CSS/SASS e os assets utilizados.
+
+- Documente seu projeto.
+
+### Plus
+- Crie testes do seu código JS.
 
   
 ### Avaliação
