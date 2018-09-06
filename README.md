@@ -1,9 +1,7 @@
 
 # Teste para candidatos à vagas de Front-End
 
-A idéia deste desafio é nos permitir avaliar melhor as habilidades de candidatos à vagas de Front-end, de vários níveis.
-
-Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quiser, porém normalmente você não deve precisar de mais do que alguns dias.
+O objetivo deste desafio é permitir uma melhor avaliação das suas habilidades como candidato à vaga de Front-end, de vários níveis. Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quiser, porém normalmente você não deve precisar de mais do que alguns dias.
 
 ## Instruções de entrega do desafio
 
@@ -36,7 +34,7 @@ OBS.: Esta aplicação deve funcionar nos navegadores mais recentes do mercado.
 
 - Faça com que sua página tenha uma ótima experiência para o usuário, independente do dispositivo que ele esteja usando.
 
-- Utilizei um código limpo e bem organizado, e de preferência, utilize alguma arquitetura modular para organizar seus arquivos CSS/SASS e os assets utilizados.
+- Utilize um código limpo e bem organizado, e de preferência, utilize alguma arquitetura modular para organizar seus arquivos CSS/SASS e os assets utilizados.
 
 - Documente seu projeto.
 
