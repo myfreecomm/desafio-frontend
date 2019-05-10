@@ -1,0 +1,21 @@
+{
+  "name": "testbigdata",
+  "version": "1.0.0",
+  "description": "Teste para a Big Data Corp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roosevelt Franklin",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "angular": "^1.7.8",
+    "sass": "^1.3.2"
+  }
+}
