@@ -1,0 +1,161 @@
+<!doctype html>
+<html ng-app="app" lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.min.css" type="text/css" />
+
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  
+
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <!-- Jquery -->
+     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- Angular -->
+    <script src="/js/angular/angular.min.js"></script>
+
+    <title>Teste Nexaas | Roosevelt Carvalho Franklin Santos</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 logo">
+            <img src="img/logoNexaas.png" class="img-fluid mx-auto d-block" alt="Logomarca Nexaas" />
+          </div>
+          <div class="col-md-9 header">
+            <div class="row align-items-center">
+              <div class="col-md-8 mr-auto">
+                <input class="form-control search-header" id="pesquisarCliente" type="search" placeholder="Busque por clientes..." aria-label="Search">
+              </div>
+              <div class="col-auto">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                          <img src="img/Notification.png" alt="Novas Notificações" />
+                        </a>
+                      </li>
+                      </a>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <img src="img/avatar-admin.png" alt="Nome do Usuário" />
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Visualizar Perfil</a>
+                          <a class="dropdown-item" href="#">Lista de Atividades</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+    <main role="main">
+
+      <div ng-controller="listaClientes">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 sidebar">
+              <ul class="sidebar-menu">
+                <li class="painel active">
+                  <a href="#">Painel</a>
+                </li>
+                <li class="configuracoes">
+                  <a href="#">Configurações</a>
+                </li>
+                <li class="suporte">
+                  <a href="#">Suporte</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-9 dashboard">
+              <section class="visao-geral">
+                <h1>Visão geral</h1>
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h2 class="card-title">Total de clientes</h2>
+                        <p class="card-text">7</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h2 class="card-title">Clientes inadimplentes</h2>
+                        <p class="card-text">4</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h2 class="card-title">Clientes adimplentes</h2>
+                        <p class="card-text">3</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <div class="card-body">
+                        <h2 class="card-title">Total arrecadado</h2>
+                        <p class="card-text">R$ 2.856,93</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="lista-clientes">
+                <h1>Clientes cadastrados</h1>
+                <div class="row justify-content-center">
+                  <div class="col-md-6 offset-md-3">
+                    <h2 class="loading">Buscando <img src="img/Spinner.png" /></h2>
+                  </div>
+                </div>
+                
+                <table class="table listaClientes">
+                  <tr ng-repeat="pessoa in dados">
+                    <td><img class="img-fluid" src="{{ pessoa.thumb }}" alt="{{ pessoa.name }}"></td>
+                    <td>{{ pessoa.name }}</td>                   
+                    <td>{{ pessoa.email }}</td>
+                    <td>{{ pessoa.phone }}</td>
+                    <td>{{ pessoa.status }}</td>
+                    <!--
+                    <p class="card-text">{{ pessoa.subscription_amount }}</p>
+                    <p class="card-text">{{ pessoa.profile_url }}</p> 
+                    --> 
+                  </tr>
+                </table>
+              </section>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <script src="js/app.module.js"></script>
+    
+    <!-- controllers -->
+    <script src="js/listaClientesController.js"></script>
+  </body>
+</html>
