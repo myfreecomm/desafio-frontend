@@ -1,47 +1,68 @@
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Teste para candidatos à vagas de Front-End
+## Available Scripts
 
-O objetivo deste desafio é permitir uma melhor avaliação das suas habilidades como candidato à vaga de Front-end, de vários níveis. Este desafio deve ser feito por você em sua casa. Gaste o tempo que você quiser, porém normalmente você não deve precisar de mais do que alguns dias.
+In the project directory, you can run:
 
-## Instruções de entrega do desafio
+### `npm start`
 
-Primeiro, faça um fork deste projeto para sua conta no Github (crie uma se você não possuir). Em seguida, implemente o projeto tal qual descrito abaixo, em seu próprio fork. Por fim, empurre todas as suas alterações para o seu fork no Github e envie um pull request para este repositório original.
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Se você já entrou em contato com alguém da Nexaas sobre uma vaga, avise também essa pessoa por email, incluindo no email o seu usuário no Github.
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-### Instruções alternativas de entrega do desafio
-  
-*Esta alternativa é direcionada aos candidatos(as) que não queiram que a submissão seja pública e/ou não saibam usar o Git*
+### `npm test`
 
-Faça um clone deste repositório. Em seguida, implemente o projeto tal qual descrito abaixo, em seu clone local. Por fim, envie via email um arquivo patch para seu contato na Nexaas.
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Caso você não saiba gerar um patch, não tem problema. Comprima o projeto todo em um arquivo .zip e mande por email para seu contato na Nexaas.
+### `npm run build`
 
-Caso não saiba nem usar o Git para clonar o repositório e iniciar o projeto, também não tem problema. Clique no botão "Download ZIP" na barra lateral direita nesta página, baixe o .zip do projeto, modifique-o, comprima novamente em um novo arquivo .zip e mande por email para seu contato na Nexaas.
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Descrição do projeto
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-Nosso desafio consiste em implementar uma aplicação client-side que consulte a [API](https://github.com/myfreecomm/desafio-frontend-api) e retorne os dados para serem mostrados no painel. 
-O usuário pode ser capaz de realizar uma busca consumindo os dados da API como mostrado nos layouts fornecidos. A fonte utilizado no projeto é a Roboto, que pode ser facilmente adicionada atravéz do site [Google Fonts](https://fonts.google.com/specimen/Roboto)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-**Os layouts se encontram na pasta *layouts* desse repositório.**
+### `npm run eject`
 
-OBS.: Esta aplicação deve funcionar nos navegadores mais recentes do mercado.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-### Diretrizes
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- Utilize algum pré-processador para o seu css, de preferência SASS. (Se quiser, fique a vontade para usar alguma lib/framework CSS)
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-- Faça com que sua página tenha uma ótima experiência para o usuário, independente do dispositivo que ele esteja usando.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-- Utilize um código limpo e bem organizado, e de preferência, utilize alguma arquitetura modular para organizar seus arquivos CSS/SASS e os assets utilizados.
+## Learn More
 
-- Documente seu projeto.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Plus
-- Crie testes do seu código JS.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-  
-### Avaliação
+### Code Splitting
 
-Seu projeto será avaliado de acordo com a qualidade do seu código e sua organização com os arquivos utilizados, além do conhecimento e bom uso da semântica HTML e CSS.
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
